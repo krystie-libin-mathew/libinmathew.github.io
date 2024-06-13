@@ -159,7 +159,8 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top h2,
+#header.header-top .resume-button {
   display: none;
 }
 
@@ -1212,3 +1213,133 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+/* ============================================================================================ */
+/* Hire Button css
+============================================================================================ */
+
+.primary_btn {
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 0px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 46px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(to right, #4458dc 0%, #35e888 100%), radial-gradient(circle at top left, #4458dc, #35e888);
+  border: double 2px transparent;
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  margin: 40px 20px 40px 0;
+}
+
+.primary_btn span {
+  padding: 0 42px;
+}
+
+.primary_btn.tr-bg {
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #35e888);
+  border: 2px solid transparent;
+  color: #222222;
+  box-shadow: none;
+  margin: 40px 20px;
+}
+
+.primary_btn.tr-bg:hover {
+  background-image: linear-gradient(to right, #4458dc 0%, #35e888 100%), radial-gradient(circle at top left, #4458dc, #35e888);
+  border: double 2px transparent;
+  color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+.primary_btn:hover {
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #35e888);
+  border: 2px solid #35e888;
+  color: #222222;
+  box-shadow: none;
+  background-clip: border-box;
+}
+
+
+/* ============================================================================================ */
+/* Skills Button css
+============================================================================================ */
+
+.list-social-icons a {
+  color: #495057
+}
+
+.list-social-icons a:hover {
+  color: #bd5d38
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #bd5d38
+}
+
+/*::::::::::::::::::::::::::::::::::::
+   About Area
+::::::::::::::::::::::::::::::::::::*/
+
+.about-bg {
+  height: 100%;
+  min-height: 450px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffc900;
+}
+
+.social-aria a {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social-aria {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  padding: 15px;
+}
+
+.social-aria a:hover {
+  border-radius: 50%;
+}
+
+.social-aria:after {
+  position: absolute;
+  content: '';
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
