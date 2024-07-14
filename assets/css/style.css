@@ -228,7 +228,7 @@ h6 {
   display: block;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px 10px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -236,14 +236,18 @@ h6 {
   white-space: nowrap;
   transition: all 0.3s ease;
   text-decoration: none;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar a i {
   font-size: 1.5rem;
   margin-bottom: 5px;
   display: block;
   position: relative;
+  transform: translateZ(25px);
 }
 
 .navbar a span {
@@ -267,7 +271,9 @@ h6 {
 }
 
 .navbar a.active {
+  transform: translateY(-5px);
   background-color: #D83B5F;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 .navbar a:hover span {
   opacity: 1;
@@ -291,9 +297,9 @@ h6 {
 /* Media query for mobile toggle */
 @media (max-width: 991px) {
   .navbar-mobile {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    padding-top: 10px; 
+    padding-top: 10px;
   }
 
   .navbar-mobile ul {
@@ -303,11 +309,11 @@ h6 {
   }
 
   .navbar-mobile li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 
   .navbar-mobile a {
-    padding: 12px 10px; 
+    padding: 12px 10px;
   }
 
   .navbar-mobile a span {
@@ -316,7 +322,7 @@ h6 {
   }
 
   .mobile-nav-toggle {
-    display: block; 
+    display: block;
   }
 
   .navbar ul {
@@ -1373,4 +1379,3 @@ section .container {
   opacity: .5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-
