@@ -530,6 +530,76 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-bg {
+  height: 100%;
+  min-height: 450px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffc900;
+}
+
+.social-aria a {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-aria {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-aria a:hover {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+.social-aria a.twitter:hover {
+  background: #1da1f2;
+}
+
+.social-aria a.linkedin:hover{
+  background: #0077b5;
+}
+
+.social-aria a.google-plus:hover{
+  background: #db4437;
+}
+.social-aria a.youtube:hover{
+  background: #ff0000;
+}
+
+.social-aria a.github:hover{
+  background: #333;
+}
+
+.social-aria a.whatsapp:hover {
+  background: #25d366;
+}
+
+.social-aria a.slack:hover {
+  background-color: #4A154B;
+}
+
+.social-aria a.telegram:hover {
+  background-color: #0088CC; 
+}
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -1357,56 +1427,4 @@ section .container {
 
 .list-icons .list-inline-item i:hover {
   color: #bd5d38
-}
-
-/*::::::::::::::::::::::::::::::::::::
-   About Area
-::::::::::::::::::::::::::::::::::::*/
-
-.about-bg {
-  height: 100%;
-  min-height: 450px;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-color: #ffc900;
-}
-
-.social-aria a {
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border: 1px solid;
-  text-align: center;
-  line-height: 30px;
-  margin: 0 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.social-aria {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-  padding: 15px;
-}
-
-.social-aria a:hover {
-  border-radius: 50%;
-}
-
-.social-aria:after {
-  position: absolute;
-  content: '';
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: .5;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
