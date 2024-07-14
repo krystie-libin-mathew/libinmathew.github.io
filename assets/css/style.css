@@ -251,12 +251,10 @@ h6 {
 }
 
 .navbar a span {
-  display: block;
-  font-size: 0.8rem;
+  display: none;
+  font-size: 0.6rem;
   font-weight: bold;
   position: absolute;
-  top: 50%;
-  left: calc(100% + 10px);
   white-space: nowrap;
   background-color: #D83B5F;
   padding: 5px 10px;
@@ -276,6 +274,7 @@ h6 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 .navbar a:hover span {
+  display: block;
   opacity: 1;
 }
 
@@ -317,8 +316,7 @@ h6 {
   }
 
   .navbar-mobile a span {
-    display: block;
-    position: fixed;
+    display: none;
   }
 
   .mobile-nav-toggle {
