@@ -385,36 +385,27 @@ h6 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#header .social-links a.twitter:hover,
-#header .social-links a.linkedin:hover,
-#header .social-links a.google-plus:hover,
-#header .social-links a.youtube:hover,
-#header .social-links a.github:hover,
-#header .social-links a.whatsapp:hover {
-  background: #D83B5F;
-}
-
-#header .social-links a.twitter {
+#header .social-links a.twitter:hover {
   background: #1da1f2;
 }
 
-#header .social-links a.linkedin {
+#header .social-links a.linkedin:hover {
   background: #0077b5;
 }
 
-#header .social-links a.google-plus {
+#header .social-links a.google-plus:hover {
   background: #db4437;
 }
 
-#header .social-links a.youtube {
+#header .social-links a.youtube:hover {
   background: #ff0000;
 }
 
-#header .social-links a.github {
+#header .social-links a.github:hover {
   background: #333;
 }
 
-#header .social-links a.whatsapp {
+#header .social-links a.whatsapp:hover {
   background: #25d366;
 }
 
