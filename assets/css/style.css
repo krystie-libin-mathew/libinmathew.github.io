@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background: #040404;
   color: #fff;
   position: relative;
   background: transparent;
@@ -224,7 +224,7 @@ h6 {
   font-weight: bold;
   position: absolute;
   white-space: nowrap;
-  background-color: #D83B5F;
+  background: #D83B5F;
   padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -233,12 +233,12 @@ h6 {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background: #555;
 }
 
 .navbar a.active {
   transform: translateY(-5px);
-  background-color: #D83B5F;
+  background: #D83B5F;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -414,32 +414,32 @@ h6 {
 
 .primary_btn {
   padding: 10px 20px;
-  background-color: #D83B5F;
+  background: #D83B5F;
   color: white;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s;
   border: double 2px transparent;
   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
   cursor: pointer;
 }
 
 .primary_btn:hover {
-  background-color: white;
+  background: white;
   color: #D83B5F;
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .primary_btn.tr-bg {
-  background-color: transparent;
+  background: transparent;
   border: 2px solid #D83B5F;
   color: #D83B5F;
 }
 
 .primary_btn.tr-bg:hover {
-  background-color: #D83B5F;
+  background: #D83B5F;
   color: white;
 }
 
@@ -519,7 +519,7 @@ section .container {
   position: relative;
   background-size: cover;
   background-position: center;
-  background-color: #ffc900;
+  background: #ffc900;
 }
 
 .social-aria a {
@@ -530,8 +530,8 @@ section .container {
   text-align: center;
   line-height: 30px;
   margin: 0 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-aria {
@@ -547,7 +547,6 @@ section .container {
 }
 
 .social-aria a:hover {
-  /* background-color: rgba(255, 255, 255, 0.7); */
   transform: scale(1.1);
   border-radius: 50%;
 }
@@ -577,11 +576,11 @@ section .container {
 }
 
 .social-aria a.slack:hover {
-  background-color: #4A154B;
+  background: #4A154B;
 }
 
 .social-aria a.telegram:hover {
-  background-color: #0088CC;
+  background: #0088CC;
 }
 
 .about-me .content h3 {
@@ -691,7 +690,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #D83B5F;
+  background: #D83B5F;
 }
 
 /*--------------------------------------------------------------
@@ -798,11 +797,11 @@ section .container {
   width: 12px;
   height: 12px;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #D83B5F;
+  background: #D83B5F;
 }
 
 /*--------------------------------------------------------------
@@ -890,7 +889,7 @@ section .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -1050,101 +1049,6 @@ section .container {
 
 .contact .info-box .social-links a:hover {
   color: #D83B5F;
-}
-
-.contact .php-email-form {
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #D83B5F;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #D83B5F;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
-  color: #fff;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #D83B5F;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
 }
 
 @keyframes animate-loading {
