@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -69,7 +69,6 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 #header h1 a,
@@ -193,7 +192,6 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 15px 10px;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -478,7 +476,6 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -496,7 +493,6 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -509,7 +505,6 @@ section .container {
   position: relative;
   background-size: cover;
   background-position: center;
-  background: #ffc900;
 }
 
 .social-aria a {
@@ -643,7 +638,6 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
@@ -663,7 +657,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+
   color: #fff;
 }
 
@@ -752,18 +746,16 @@ section .container {
 .testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
+  display: inline-block;
+  position: relative;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
   left: -5px;
-  position: relative;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
   right: -5px;
-  position: relative;
   top: 10px;
 }
 
@@ -817,7 +809,6 @@ section .container {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #D83B5F;
   margin-bottom: 10px;
 }
