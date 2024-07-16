@@ -205,7 +205,7 @@ h6 {
 }
 
 .navbar a i {
-  font-size: 1.5rem;
+  font-size: 24px;
   margin-bottom: 5px;
   display: block;
   position: relative;
@@ -214,7 +214,7 @@ h6 {
 
 .navbar a span {
   display: none;
-  font-size: 0.6rem;
+  font-size: 9.6px;
   font-weight: bold;
   position: absolute;
   white-space: nowrap;
@@ -657,7 +657,6 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-
   color: white;
 }
 
@@ -1077,21 +1076,21 @@ section .container {
 # Skills Button css
 --------------------------------------------------------------*/
 .list-social-icons a {
-  color: #495057
+  color: #495057;
 }
 
 .list-social-icons a:hover {
-  color: #bd5d38
+  color: #bd5d38;
 }
 
 .list-social-icons a .fa-lg {
-  font-size: 1.75rem
+  font-size: 28px;
 }
 
 .list-icons {
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #bd5d38
+  color: #bd5d38;
 }
