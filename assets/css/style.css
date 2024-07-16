@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background: #040404;
-  color: #fff;
+  background: black;
+  color: white;
   position: relative;
   background: transparent;
 }
@@ -12,7 +12,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: black url("../img/bg.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -73,7 +73,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: white;
   line-height: 1;
   display: inline-block;
 }
@@ -85,7 +85,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: white;
   border-bottom: 2px solid #D83B5F;
   padding-bottom: 6px;
 }
@@ -242,7 +242,7 @@ h6 {
 }
 
 .mobile-nav-toggle {
-  color: #fff;
+  color: white;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -493,7 +493,7 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -508,7 +508,7 @@ section .container {
 }
 
 .social-aria a {
-  color: #fff;
+  color: white;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -632,7 +632,7 @@ section .container {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #fff;
+  color: white;
 }
 
 .counts .count-box p {
@@ -658,7 +658,7 @@ section .container {
   display: block;
   font-weight: 600;
 
-  color: #fff;
+  color: white;
 }
 
 .skills .progress .skill .val {
@@ -700,7 +700,7 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #fff;
+  color: white;
 }
 
 .interests .icon-box:hover {
@@ -733,7 +733,7 @@ section .container {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  color: white;
 }
 
 .testimonials .testimonial-item h4 {
@@ -794,7 +794,7 @@ section .container {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: white;
 }
 
 .resume .resume-item {
@@ -877,8 +877,8 @@ section .container {
 
 .clients .icon-box:hover {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  border-color: #fff;
+  background: white;
+  border-color: white;
 }
 
 .clients .icon-box:hover::before {
@@ -924,7 +924,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: white;
   font-size: 28px;
 }
 
@@ -948,7 +948,7 @@ section .container {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: white;
 }
 
 .services .icon-box p {
@@ -963,7 +963,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: white;
 }
 
 .services .icon-box:hover .icon i {
@@ -976,7 +976,7 @@ section .container {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1007,7 +1007,7 @@ section .container {
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color: white;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -1021,7 +1021,7 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: white;
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
@@ -1052,7 +1052,7 @@ section .container {
   padding: 15px;
   text-align: right;
   font-size: 13px;
-  color: #fff;
+  color: white;
   z-index: 999999;
 }
 
@@ -1070,7 +1070,7 @@ section .container {
 }
 
 .credits a:hover {
-  color: #fff;
+  color: white;
 }
 
 /*--------------------------------------------------------------
