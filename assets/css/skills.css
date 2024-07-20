@@ -32,3 +32,26 @@
     transition: 0.9s;
     background: #D83B5F;
 }
+
+/*--------------------------------------------------------------
+# Skills Button css
+--------------------------------------------------------------*/
+.list-social-icons a {
+    color: #495057;
+  }
+  
+  .list-social-icons a:hover {
+    color: #bd5d38;
+  }
+  
+  .list-social-icons a .fa-lg {
+    font-size: 28px;
+  }
+  
+  .list-icons {
+    font-size: 48px;
+  }
+  
+  .list-icons .list-inline-item i:hover {
+    color: #bd5d38;
+  }

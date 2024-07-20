@@ -114,7 +114,7 @@ section .container {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
+/* .counts {
   padding: 70px 0 60px;
 }
 
@@ -150,12 +150,12 @@ section .container {
   padding: 0;
   margin: 0;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
-.interests .icon-box {
+/* .interests .icon-box {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -180,27 +180,5 @@ section .container {
 
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
-}
+} */
 
-/*--------------------------------------------------------------
-# Skills Button css
---------------------------------------------------------------*/
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #bd5d38;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 28px;
-}
-
-.list-icons {
-  font-size: 48px;
-}
-
-.list-icons .list-inline-item i:hover {
-  color: #bd5d38;
-}
