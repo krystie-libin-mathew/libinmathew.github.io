@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about-bg {
+    height: 100%;
+    min-height: 450px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-aria a {
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-aria {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-aria a:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+.social-aria a.twitter:hover {
+    background: #1da1f2;
+}
+
+.social-aria a.linkedin:hover {
+    background: #0077b5;
+}
+
+.social-aria a.google-plus:hover {
+    background: #db4437;
+}
+
+.social-aria a.youtube:hover {
+    background: #ff0000;
+}
+
+.social-aria a.github:hover {
+    background: #333;
+}
+
+.social-aria a.whatsapp:hover {
+    background: #25d366;
+}
+
+.social-aria a.slack:hover {
+    background: #4A154B;
+}
+
+.social-aria a.telegram:hover {
+    background: #0088CC;
+}
+
+.about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #D83B5F;
+}
+
+.about-me .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about-me .content ul strong {
+    margin-right: 10px;
+}
+
+.about-me .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #D83B5F;
+    line-height: 0;
+}
+
+.about-me .content p:last-child {
+    margin-bottom: 0;
+}
