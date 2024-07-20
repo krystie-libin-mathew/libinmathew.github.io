@@ -1,61 +1,137 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info-box {
-    color: #444444;
-    padding: 20px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.08);
+.contact {
+    color: #fff;
 }
 
-.contact .info-box i.bx {
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60em;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.icon-circle {
     font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
     color: #D83B5F;
     border-radius: 50%;
-    padding: 14px;
-    float: left;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.contact .info-box h3 {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    margin: 10px 0 8px 68px;
-}
-
-.contact .info-box p {
-    padding: 0;
-    color: white;
-    line-height: 24px;
-    font-size: 14px;
-    margin: 0 0 0 68px;
-}
-
-.contact .info-box .social-links {
-    margin: 5px 0 0 68px;
+    width: 60px;
+    height: 60px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+
 }
 
-.contact .info-box .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    color: white;
-    line-height: 1;
-    margin-right: 12px;
-    transition: 0.3s;
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-.contact .info-box .social-links a:hover {
-    color: #D83B5F;
+.contact-card p {
+    font-size: 16px;
+    color: black;
 }
 
-@keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.flip-card-back .social-links a {
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.flip-card-back .social-links a:hover {
+    background: #D83B5F;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    height: 420px;
+}
+
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
     }
 
-    100% {
-        transform: rotate(360deg);
+    .map-container {
+        height: 300px;
     }
 }
