@@ -18,6 +18,7 @@
 
 .contact-card {
     background: rgba(255, 255, 255, 0.1);
+    border: 6px solid rgba(255, 255, 255, 0.12);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -30,7 +31,6 @@
 }
 
 .contact-card:hover {
-    transform: translateY(-10px);
     background: #D83B5F;
     color: black;
 }
@@ -49,12 +49,12 @@
 }
 
 .contact-card h3 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
 .contact-card p {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     font-weight: bold;
 }
@@ -134,7 +134,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    background: rgba(216, 59, 95, 0.8);;
+    background: rgba(216, 59, 95, 0.8);
     color: #fff;
     border-radius: 5px;
     font-size: 18px;
