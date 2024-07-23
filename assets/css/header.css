@@ -1,3 +1,51 @@
+.color-mode {
+    position: relative;
+    /* top: 20px;
+    right: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.theme-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.theme-button[data-theme="light"] {
+    background-color: var(--background-light);
+}
+
+.theme-button[data-theme="dark"] {
+    background-color: var(--background-dark);
+}
+
+.theme-button[data-theme="blue"] {
+    background-color: var(--background-blue);
+}
+
+.theme-button[data-theme="green"] {
+    background-color: var(--background-green);
+}
+
+.theme-button[data-theme="purple"] {
+    background-color: var(--background-purple);
+}
+
+.theme-button:hover {
+    transform: scale(1.2);
+}
+
 /*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/

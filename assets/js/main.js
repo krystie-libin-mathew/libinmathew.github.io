@@ -3,6 +3,21 @@
   "use strict";
 
   /**
+   * Theme selector helper function
+   */
+  document.addEventListener("DOMContentLoaded", function () {
+    const themeButtons = document.querySelectorAll(".theme-button");
+
+    themeButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const theme = button.getAttribute("data-theme");
+        document.body.setAttribute("data-theme", theme);
+        localStorage.setItem('theme', theme);
+      });
+    });
+  });
+
+  /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
