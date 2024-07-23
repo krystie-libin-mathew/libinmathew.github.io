@@ -13,7 +13,7 @@
   margin: -55px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.12);
+  border: 6px solid var(--border-color);
 }
 
 .testimonials .testimonial-item h3 {
@@ -58,7 +58,7 @@
   z-index: 1;
   text-align: justify;
   text-justify: inter-word;
-  border: 6px solid rgba(255, 255, 255, 0.12);
+  border: 6px solid var(--border-color);
 }
 
 .testimonials .swiper-pagination {

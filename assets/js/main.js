@@ -7,12 +7,16 @@
    */
   document.addEventListener("DOMContentLoaded", function () {
     const themeButtons = document.querySelectorAll(".theme-button");
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+
+    document.body.setAttribute("data-theme", currentTheme);
+    themeButtons.value = currentTheme;
 
     themeButtons.forEach(button => {
       button.addEventListener("click", function () {
-        const theme = button.getAttribute("data-theme");
-        document.body.setAttribute("data-theme", theme);
-        localStorage.setItem('theme', theme);
+        const selectedTheme = button.getAttribute("data-theme");
+        document.body.setAttribute("data-theme", selectedTheme);
+        localStorage.setItem('theme', selectedTheme);
       });
     });
   });
