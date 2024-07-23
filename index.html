@@ -38,12 +38,37 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/testimonials.css">
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeSelect = document.getElementById('theme-select');
+      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      themeSelect.value = currentTheme;
+
+      themeSelect.addEventListener('change', function () {
+        const selectedTheme = themeSelect.value;
+        document.documentElement.setAttribute('data-theme', selectedTheme);
+        localStorage.setItem('theme', selectedTheme);
+      });
+    });
+  </script>
 </head>
 
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div class="color-mode">
+        <label for="theme-select">Choose Theme: </label>
+        <select id="theme-select" aria-label="Select theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+        </select>
+      </div>
       <h1><a href="index.html">Libin Mathew</a></h1>
       <h2>
         <p>I'm
