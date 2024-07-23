@@ -1,11 +1,11 @@
 /*--------------------------------------------------------------
-# Testimonials
+# 6. Testimonials Section
 --------------------------------------------------------------*/
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
