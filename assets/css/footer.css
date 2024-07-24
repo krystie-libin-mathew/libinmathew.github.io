@@ -23,7 +23,7 @@
 }
 
 .credits a {
-    color: #D83B5F;
+    color: var(--theme-color);
     transition: 0.3s;
 }
 

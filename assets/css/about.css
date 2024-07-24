@@ -74,7 +74,7 @@
 .about-me .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #D83B5F;
+    color: var(--theme-color);
 }
 
 .about-me .content ul {
@@ -95,7 +95,7 @@
 .about-me .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #D83B5F;
+    color: var(--theme-color);
     line-height: 0;
 }
 

@@ -13,7 +13,7 @@
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #D83B5F;
+  background: var(--theme-color);
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -58,8 +58,8 @@
 }
 
 .services .icon-box:hover {
-  background: #D83B5F;
-  border-color: #D83B5F;
+  background: var(--theme-color);
+  border-color: var(--theme-color);
 }
 
 .services .icon-box:hover .icon {
@@ -67,11 +67,11 @@
 }
 
 .services .icon-box:hover .icon i {
-  color: #D83B5F;
+  color: var(--theme-color);
 }
 
 .services .icon-box:hover .icon::before {
-  background: #D83B5F;
+  background: var(--theme-shadow-color);
 }
 
 .services .icon-box:hover h4 a,

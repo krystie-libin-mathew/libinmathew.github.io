@@ -30,7 +30,7 @@
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background: #D83B5F;
+  background: var(--theme-color);
 }
 
 .list-social-icons a {
@@ -38,7 +38,7 @@
 }
 
 .list-social-icons a:hover {
-  color: #bd5d38;
+  color: var(--theme-color);
 }
 
 .list-social-icons a .fa-lg {
@@ -50,5 +50,5 @@
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #bd5d38;
+  color: var(--theme-color);
 }
