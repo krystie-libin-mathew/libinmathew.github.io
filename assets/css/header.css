@@ -208,6 +208,7 @@
 
 .navbar li {
     position: relative;
+    margin-bottom: 10px;
     perspective: 1000px;
 }
 
