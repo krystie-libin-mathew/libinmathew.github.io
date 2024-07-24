@@ -35,6 +35,10 @@
     background-color: var(--background-green);
 }
 
+.theme-button[data-theme="red"] {
+    background-color: var(--background-red);
+}
+
 .theme-button[data-theme="purple"] {
     background-color: var(--background-purple);
 }
