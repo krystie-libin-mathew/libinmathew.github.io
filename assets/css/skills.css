@@ -33,18 +33,6 @@
   background: var(--theme-color);
 }
 
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: var(--theme-color);
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 28px;
-}
-
 .list-icons {
   font-size: 48px;
 }

@@ -1,12 +1,30 @@
 :root {
+    --theme-blue-line: #006FE6;
+    --theme-blue-rgb: 0, 123, 255;
+    --theme-blue-shadow: #0062CC;
+    --theme-blue: #007BFF;
+
     --theme-green-line: #4CEB95;
     --theme-green-rgb: 24, 210, 110;
     --theme-green-shadow: #35E888;
     --theme-green: #18D26E;
+
     --theme-pink-line: #D02950;
     --theme-pink-rgb: 216, 59, 95;
     --theme-pink-shadow: #BB2547;
     --theme-pink: #D83B5F;
+
+    --theme-yellow-line: #FFAC07;
+    --theme-yellow-rgb: 255, 193, 7;
+    --theme-yellow-shadow: #EDB100;
+    --theme-yellow: #FFC107;
+}
+
+[data-theme="blue"] {
+    --theme-color-rgb: var(--theme-blue-rgb);
+    --theme-color: var(--theme-blue);
+    --theme-line-color: var(--theme-blue-line);
+    --theme-shadow-color: var(--theme-blue-shadow);
 }
 
 [data-theme="green"] {
@@ -21,4 +39,11 @@
     --theme-color: var(--theme-pink);
     --theme-line-color: var(--theme-pink-line);
     --theme-shadow-color: var(--theme-pink-shadow);
+}
+
+[data-theme="yellow"] {
+    --theme-color-rgb: var(--theme-yellow-rgb);
+    --theme-color: var(--theme-yellow);
+    --theme-line-color: var(--theme-yellow-line);
+    --theme-shadow-color: var(--theme-yellow-shadow);
 }

@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
 .theme-buttons {
@@ -28,7 +29,7 @@
 }
 
 .theme-button[data-theme="blue"] {
-    background-color: var(--background-blue);
+    background-color: var(--theme-blue);
 }
 
 .theme-button[data-theme="pink"] {
@@ -41,6 +42,10 @@
 
 .theme-button[data-theme="red"] {
     background-color: var(--background-red);
+}
+
+.theme-button[data-theme="yellow"] {
+    background-color: var(--theme-yellow);
 }
 
 .theme-button[data-theme="purple"] {
@@ -79,7 +84,7 @@
 
 #header h1 a,
 #header h1 a:hover {
-    color: white;
+    color: var(--theme-color);
     line-height: 1;
     display: inline-block;
 }

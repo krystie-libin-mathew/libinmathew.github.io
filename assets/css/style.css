@@ -32,11 +32,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--theme-color);
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
