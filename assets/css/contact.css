@@ -49,14 +49,13 @@
 }
 
 .contact-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .contact-card p {
   font-size: 14px;
   color: white;
-  font-weight: bold;
 }
 
 .flip-card {
@@ -134,11 +133,9 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background: rgba(216, 59, 95, 0.8);
+  background: rgba(var(--theme-color-rgb), 0.8);
   color: white;
   border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
   text-align: center;
 }
 

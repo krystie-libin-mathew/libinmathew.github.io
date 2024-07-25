@@ -14,7 +14,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 2px solid var(--border-color);
+    border: 2px solid transparent;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -221,7 +221,6 @@
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
-    background: rgba(255, 255, 255, 0.8);
     white-space: nowrap;
     transition: all 0.3s ease-in-out 0s;
     text-decoration: none;
@@ -248,7 +247,7 @@
     font-weight: bold;
     position: absolute;
     white-space: nowrap;
-    background: #D83B5F;
+    background: var(--theme-color);
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -262,7 +261,7 @@
 
 .navbar a.active {
     transform: translateY(-5px);
-    background: #D83B5F;
+    background: var(--theme-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -440,7 +439,7 @@
 
 .primary_btn {
     padding: 10px 20px;
-    background: #D83B5F;
+    background: var(--theme-color);
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -453,18 +452,18 @@
 
 .primary_btn:hover {
     background: white;
-    color: #D83B5F;
+    color: var(--theme-color);
     transform: translateY(-3px);
     transition: all 0.3s ease-in-out 0s;
 }
 
 .primary_btn.tr-bg {
     background: transparent;
-    border: 2px solid #D83B5F;
-    color: #D83B5F;
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
 }
 
 .primary_btn.tr-bg:hover {
-    background: #D83B5F;
+    background: var(--theme-color);
     color: white;
 }

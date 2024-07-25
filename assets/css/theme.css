@@ -1,20 +1,23 @@
 :root {
-    --theme-green: #18D26E;
-    --theme-green-shadow: #35E888;
     --theme-green-line: #4CEB95;
-
-    --theme-pink: #D83B5F;
-    --theme-pink-shadow: #BB2547;
+    --theme-green-rgb: 24, 210, 110;
+    --theme-green-shadow: #35E888;
+    --theme-green: #18D26E;
     --theme-pink-line: #D02950;
+    --theme-pink-rgb: 216, 59, 95;
+    --theme-pink-shadow: #BB2547;
+    --theme-pink: #D83B5F;
 }
 
 [data-theme="green"] {
+    --theme-color-rgb: var(--theme-green-rgb);
     --theme-color: var(--theme-green);
     --theme-line-color: var(--theme-green-line);
     --theme-shadow-color: var(--theme-green-shadow);
 }
 
 [data-theme="pink"] {
+    --theme-color-rgb: var(--theme-pink-rgb);
     --theme-color: var(--theme-pink);
     --theme-line-color: var(--theme-pink-line);
     --theme-shadow-color: var(--theme-pink-shadow);
