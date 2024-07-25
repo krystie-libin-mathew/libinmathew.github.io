@@ -2,7 +2,7 @@
 # 7. Contact Section
 --------------------------------------------------------------*/
 .contact {
-  color: #fff;
+  color: white;
 }
 
 .contact-content {
@@ -104,7 +104,7 @@
 .flip-card-back .social-links a {
   font-size: 16px;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: white;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -135,7 +135,7 @@
   transform: translateX(-50%);
   padding: 10px 20px;
   background: rgba(216, 59, 95, 0.8);
-  color: #fff;
+  color: white;
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;

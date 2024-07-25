@@ -112,7 +112,7 @@
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: white;
     line-height: 1;
     margin-right: 8px;
     border-radius: 50%;
@@ -275,7 +275,7 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #fff;
+    color: white;
 }
 
 .navbar a:hover:before,
