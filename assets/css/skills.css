@@ -4,7 +4,7 @@
 .skills .progress {
   height: 60px;
   display: block;
-  background: none;
+  background: transparent;
   border-radius: 0;
 }
 
