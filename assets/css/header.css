@@ -60,6 +60,19 @@
 # Header Section
 --------------------------------------------------------------*/
 
+.welcome-text{
+    color: var(--theme-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.education-intro {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: white;
+}
+
 #header {
     transition: ease-in-out 0.3s;
     position: relative;

@@ -13,7 +13,6 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .contact-card {
@@ -32,7 +31,6 @@
 
 .contact-card:hover {
   background: var(--theme-color);
-  color: black;
 }
 
 .icon-circle {
