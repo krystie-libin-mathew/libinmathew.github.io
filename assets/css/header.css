@@ -1,73 +1,72 @@
-.color-mode {
+/*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+#header .color-mode {
     position: relative;
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
 
-.theme-buttons {
+#header .theme-buttons {
     display: flex;
     gap: 10px;
     margin-left: 10px;
 }
 
-.theme-button {
+#header .theme-button {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-.theme-button[data-theme="light"] {
+#header .theme-button[data-theme="light"] {
     background-color: var(--background-light);
 }
 
-.theme-button[data-theme="dark"] {
+#header .theme-button[data-theme="dark"] {
     background-color: var(--background-dark);
 }
 
-.theme-button[data-theme="blue"] {
+#header .theme-button[data-theme="blue"] {
     background-color: var(--theme-blue);
 }
 
-.theme-button[data-theme="pink"] {
+#header .theme-button[data-theme="pink"] {
     background-color: var(--theme-pink);
 }
 
-.theme-button[data-theme="green"] {
+#header .theme-button[data-theme="green"] {
     background-color: var(--theme-green);
 }
 
-.theme-button[data-theme="red"] {
+#header .theme-button[data-theme="red"] {
     background-color: var(--background-red);
 }
 
-.theme-button[data-theme="yellow"] {
+#header .theme-button[data-theme="yellow"] {
     background-color: var(--theme-yellow);
 }
 
-.theme-button[data-theme="purple"] {
+#header .theme-button[data-theme="purple"] {
     background-color: var(--background-purple);
 }
 
-.theme-button:hover {
+#header .theme-button:hover {
     transform: scale(1.2);
 }
 
-/*--------------------------------------------------------------
-# Header Section
---------------------------------------------------------------*/
-
-.welcome-text{
+#header .welcome-text {
     color: var(--theme-color);
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.education-intro {
+#header .education-intro {
     margin-top: 10px;
     font-size: 1.4rem;
     color: white;
@@ -85,6 +84,12 @@
 
 #header * {
     transition: ease-in-out 0.3s;
+}
+
+#header .container {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
 }
 
 #header h1 {
@@ -240,7 +245,7 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s;
     text-decoration: none;
     position: relative;
     transform-style: preserve-3d;
@@ -274,7 +279,7 @@
 }
 
 .navbar a:hover {
-    background: #555;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .navbar a.active {
@@ -414,7 +419,7 @@
     background: rgba(255, 255, 255, 0.1);
     color: white;
     border-radius: 50%;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, transform 0.3s;
     text-decoration: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -448,7 +453,7 @@
     background: #25d366;
 }
 
-.resume-button {
+#header .resume-button {
     display: flex;
     justify-content: left;
     gap: 20px;
