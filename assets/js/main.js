@@ -3,21 +3,6 @@
   "use strict";
 
   /**
-   * 3D Box rotatation and reset helper function
-   */
-  const box = document.querySelector('.box');
-
-  box.addEventListener('mouseover', () => {
-    box.classList.add('reset'); // Reset box to neutral position
-    setTimeout(() => box.classList.add('pause'), 500); // Add pause class after reset animation
-  });
-  
-  box.addEventListener('mouseout', () => {
-    box.classList.remove('pause', 'reset'); // Remove classes to resume rotation
-  });
-  
-
-  /**
    * Theme selector helper function
    */
   document.addEventListener("DOMContentLoaded", function () {
@@ -288,6 +273,21 @@
       clickable: true
     }
   });
+
+  /**
+   * 3D Box rotatation and reset helper function
+   */
+  const box = document.querySelector('.box');
+
+  box.addEventListener('mouseover', () => {
+    box.classList.add('reset'); // Reset box to neutral position
+    setTimeout(() => box.classList.add('pause'), 500); // Add pause class after reset animation
+  });
+
+  box.addEventListener('mouseout', () => {
+    box.classList.remove('pause', 'reset'); // Remove classes to resume rotation
+  });
+
 
   /**
    * Initiate Pure Counter 
