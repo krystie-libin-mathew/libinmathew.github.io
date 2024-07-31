@@ -33,10 +33,10 @@
   background: var(--theme-color);
 }
 
-.list-icons {
+.skills .list-icons {
   font-size: 48px;
 }
 
-.list-icons .list-inline-item i:hover {
+.skills .list-icons .list-inline-item i:hover {
   color: var(--theme-color);
 }

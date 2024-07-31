@@ -2,7 +2,7 @@
 # 1. About Section
 --------------------------------------------------------------*/
 
-.about-bg {
+.about-me .about-bg {
     height: 100%;
     min-height: 450px;
     position: relative;
@@ -42,7 +42,7 @@
     margin-bottom: 0;
 }
 
-.social-aria {
+.about-me .social-aria {
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -54,7 +54,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.social-aria a {
+.about-me .social-aria a {
     color: white;
     width: 30px;
     height: 30px;
@@ -66,39 +66,39 @@
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.social-aria a:hover {
+.about-me .social-aria a:hover {
     transform: scale(1.1);
     border-radius: 50%;
 }
 
-.social-aria a.twitter:hover {
+.about-me .social-aria a.twitter:hover {
     background: #1da1f2;
 }
 
-.social-aria a.linkedin:hover {
+.about-me .social-aria a.linkedin:hover {
     background: #0077b5;
 }
 
-.social-aria a.google-plus:hover {
+.about-me .social-aria a.google-plus:hover {
     background: #db4437;
 }
 
-.social-aria a.youtube:hover {
+.about-me .social-aria a.youtube:hover {
     background: #ff0000;
 }
 
-.social-aria a.github:hover {
+.about-me .social-aria a.github:hover {
     background: #333;
 }
 
-.social-aria a.whatsapp:hover {
+.about-me .social-aria a.whatsapp:hover {
     background: #25d366;
 }
 
-.social-aria a.slack:hover {
+.about-me .social-aria a.slack:hover {
     background: #4A154B;
 }
 
-.social-aria a.telegram:hover {
+.about-me .social-aria a.telegram:hover {
     background: #0088CC;
 }

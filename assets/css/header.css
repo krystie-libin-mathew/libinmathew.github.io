@@ -178,7 +178,6 @@
 #header {
     transition: ease-in-out 0.3s;
     position: relative;
-    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -328,7 +327,6 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    padding-top: 20px;
     z-index: 1000;
 }
 
@@ -336,12 +334,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    align-items: center;
 }
 
 .navbar li {
     position: relative;
     margin-bottom: 10px;
-    perspective: 1000px;
 }
 
 .navbar a,
@@ -354,7 +352,6 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
-    transition: all 0.3s;
     text-decoration: none;
     position: relative;
     transform-style: preserve-3d;
@@ -371,7 +368,6 @@
 .navbar a:focus i {
     font-size: 16px;
     line-height: 0;
-    /* margin-bottom: 5px; */
     display: block;
     position: relative;
     transform: translateZ(25px);
@@ -406,18 +402,19 @@
     opacity: 1;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-    color: white;
-}
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
     width: 25px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
 }
 
 .mobile-nav-toggle {
@@ -608,7 +605,7 @@
     position: fixed;
     z-index: 1;
     top: 30px;
-    right: 30px;
+    left: 30px;
     width: 70px;
     height: 70px;
 }
