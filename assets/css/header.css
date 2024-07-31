@@ -23,8 +23,9 @@
     cursor: pointer;
     position: relative;
     background-color: #f0f0f0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2),
+        4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #header .theme-button[data-theme="light"] {
@@ -59,14 +60,28 @@
     background-color: var(--background-purple);
 }
 
+#header .theme-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.4), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
 #header .theme-button:hover {
     transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
+        6px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #header .theme-button.selected {
-    border: 2px solid #000;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3),
+        0 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 #header .theme-button::after {
@@ -85,6 +100,7 @@
     transition: opacity 0.3s, visibility 0.3s;
     font-size: 9.6px;
     font-weight: 500;
+    z-index: 2;
 }
 
 #header .theme-button:hover::after {
