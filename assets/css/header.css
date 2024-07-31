@@ -125,11 +125,19 @@
 }
 
 #header .social-links {
-    margin-top: 40px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
 }
 
 #header .social-links a {
+    text-decoration: none;
+    transition: color 0.3s;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -143,9 +151,6 @@
     height: 40px;
 }
 
-#header .social-links a:hover {
-    background: #18d26e;
-}
 
 @media (max-width: 992px) {
     #header h1 {
@@ -213,20 +218,20 @@
 }
 
 .navbar {
-    width: 60px;
-    height: 100vh;
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
     padding-top: 20px;
     z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    align-items: center;
 }
 
 .navbar li {
@@ -239,8 +244,8 @@
 .navbar a:focus {
     display: block;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 10px;
+    justify-content: center;
+    padding: 10px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
@@ -249,16 +254,20 @@
     text-decoration: none;
     position: relative;
     transform-style: preserve-3d;
-    border-radius: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, color 0.3s;
     border: 6px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar a i,
 .navbar a:focus i {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 0;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     display: block;
     position: relative;
     transform: translateZ(25px);
@@ -429,27 +438,27 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#header .social-links a.twitter:hover {
+#header .social-links a.twitter {
     background: #1da1f2;
 }
 
-#header .social-links a.linkedin:hover {
+#header .social-links a.linkedin {
     background: #0077b5;
 }
 
-#header .social-links a.google-plus:hover {
+#header .social-links a.google-plus {
     background: #db4437;
 }
 
-#header .social-links a.youtube:hover {
+#header .social-links a.youtube {
     background: #ff0000;
 }
 
-#header .social-links a.github:hover {
+#header .social-links a.github {
     background: #333;
 }
 
-#header .social-links a.whatsapp:hover {
+#header .social-links a.whatsapp {
     background: #25d366;
 }
 
@@ -492,10 +501,6 @@
 }
 
 .scene {
-    /* perspective: -800px; */
-    display: flex;
-    justify-content: right;
-    align-items: right;
     position: fixed;
     z-index: 1;
     top: 30px;
@@ -518,12 +523,12 @@
     width: 50px;
     height: 50px;
     background: rgba(var(--theme-color-rgb), 0.9);
-    border: 2px solid whitesmoke;
+    border: 2px solid black;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    color: white;
     font-weight: bold;
 }
 
