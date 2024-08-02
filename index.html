@@ -36,7 +36,6 @@
   <link rel="stylesheet" href="assets/css/contact.css">
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/header.css">
-  <link rel="stylesheet" href="assets/css/hero.css">
   <link rel="stylesheet" href="assets/css/resume.css">
   <link rel="stylesheet" href="assets/css/services.css">
   <link rel="stylesheet" href="assets/css/skills.css">
@@ -46,29 +45,9 @@
 </head>
 
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none" aria-label="Toggle Navigation"></i>
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a class="nav-link active" href="#hero" aria-label="Home"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
-        <li><a class="nav-link" href="#about" aria-label="About"><i class="bi bi-person"></i> <span>About</span></a></li>
-        <li><a class="nav-link" href="#resume" aria-label="Resume"><i class="bi bi-file-earmark"></i> <span>Resume</span></a></li>
-        <li><a class="nav-link" href="#skills" aria-label="Skills"><i class="bi bi-gear"></i> <span>Skills</span></a></li>
-        <li><a class="nav-link" href="#clients" aria-label="Clients"><i class="bi bi-people"></i> <span>Clients</span></a></li>
-        <li><a class="nav-link" href="#services" aria-label="Services"><i class="bi bi-hdd-stack"></i> <span>Services</span></a></li>
-        <li><a class="nav-link" href="#testimonials" aria-label="Testimonials"><i class="bi bi-chat-dots"></i> <span>Testimonials</span></a></li>
-        <li><a class="nav-link" href="#contact" aria-label="Contact"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+  <header id="header">
+    <div class="container">
       <div class="scene">
         <div class="box">
           <div class="face front">LM</div>
@@ -103,6 +82,19 @@
       <div class="education-intro">
         <p>MBA in Business Analytics & <br>MCA in Software Engineering</p>
       </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header" aria-label="Home"><i class="bi bi-house-door"></i><span>Home</span></a></li>
+          <li><a class="nav-link" href="#about" aria-label="About"><i class="bi bi-person"></i><span>About</span></a></li>
+          <li><a class="nav-link" href="#resume" aria-label="Resume"><i class="bi bi-file-earmark-text"></i><span>Resume</span></a></li>
+          <li><a class="nav-link" href="#skills" aria-label="Skills"><i class="bi bi-gear"></i><span>Skills</span></a></li>
+          <li><a class="nav-link" href="#clients" aria-label="Clients"><i class="bi bi-people"></i><span>Clients</span></a></li>
+          <li><a class="nav-link" href="#services" aria-label="Services"><i class="bi bi-hdd-stack"></i><span>Services</span></a></li>
+          <li><a class="nav-link" href="#testimonial" aria-label="Testimonial"><i class="bi bi-chat-dots"></i><span>Testimonial</span></a></li>
+          <li><a class="nav-link" href="#contact" aria-label="Contact"><i class="bi bi-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle Navigation"></i>
+      </nav>
       <div class="social-links">
         <a href="#" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
@@ -116,7 +108,7 @@
         <a class="primary_btn tr-bg" href="#"><span>Download CV</span></a>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </header><!-- End Header -->
 
   <main id="main">
 
