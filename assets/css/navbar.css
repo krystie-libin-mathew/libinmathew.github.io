@@ -16,7 +16,7 @@
 }
 
 .navbar li+li {
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 .navbar a,
@@ -24,12 +24,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 10px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
     transition: 0.3s;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .navbar a i,
@@ -46,17 +47,26 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #18d26e;
+    background: var(--theme-color);;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a.active {
+    transform: translateY(-5px);
+    background: var(--theme-color);
 }
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
-    width: 25px;
+    width: 100%;
 }
 
 .navbar a:hover,
