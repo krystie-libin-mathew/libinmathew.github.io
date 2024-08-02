@@ -1,9 +1,9 @@
-.navbar {
+.horizontal-navbar {
     padding: 0;
     margin-top: 35px;
 }
 
-.navbar ul {
+.horizontal-navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,16 +11,16 @@
     align-items: center;
 }
 
-.navbar li {
+.horizontal-navbar li {
     position: relative;
 }
 
-.navbar li+li {
+.horizontal-navbar li+li {
     margin-left: 5px;
 }
 
-.navbar a,
-.navbar a:focus {
+.horizontal-navbar a,
+.horizontal-navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,14 +33,14 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.navbar a i,
-.navbar a:focus i {
+.horizontal-navbar a i,
+.horizontal-navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
 }
 
-.navbar a:before {
+.horizontal-navbar a:before {
     content: "";
     position: absolute;
     width: 0;
@@ -53,26 +53,26 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover {
+.horizontal-navbar a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.navbar a.active {
+.horizontal-navbar a.active {
     transform: translateY(-5px);
     background: var(--theme-color);
 }
 
-.navbar a:hover:before,
-.navbar li:hover>a:before,
-.navbar .active:before {
+.horizontal-navbar a:hover:before,
+.horizontal-navbar li:hover>a:before,
+.horizontal-navbar .active:before {
     visibility: visible;
     width: 100%;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.horizontal-navbar a:hover,
+.horizontal-navbar .active,
+.horizontal-navbar .active:focus,
+.horizontal-navbar li:hover>a {
     color: white;
 }
 
@@ -93,7 +93,7 @@
         display: block;
     }
 
-    .navbar ul {
+    .horizontal-navbar ul {
         display: none;
     }
 }
