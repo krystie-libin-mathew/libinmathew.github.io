@@ -6,16 +6,13 @@
 .horizontal-navbar ul {
     margin: 0;
     padding: 0;
-    display: flex;
     list-style: none;
     align-items: center;
+    display: flex;
 }
 
 .horizontal-navbar li {
     position: relative;
-}
-
-.horizontal-navbar li+li {
     margin-left: 5px;
 }
 
@@ -23,7 +20,7 @@
 .horizontal-navbar a:focus {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     font-size: 16px;
     font-weight: 400;
@@ -37,6 +34,7 @@
 .horizontal-navbar a:focus i {
     font-size: 12px;
     line-height: 0;
+    display: none;
     margin-left: 5px;
 }
 
@@ -47,7 +45,7 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: var(--theme-color);;
+    background: var(--theme-color);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -76,6 +74,7 @@
     color: white;
 }
 
+/* Mobile Navigation */
 .mobile-nav-toggle {
     color: white;
     font-size: 28px;

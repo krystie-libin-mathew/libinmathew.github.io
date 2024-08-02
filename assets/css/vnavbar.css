@@ -17,7 +17,7 @@
 
 .vertical-navbar li {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .vertical-navbar a,
@@ -30,12 +30,9 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
-    text-decoration: none;
-    position: relative;
-    transform-style: preserve-3d;
-    border-radius: 8px;
+    transition: 0.3s;
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
     border: 6px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -44,8 +41,6 @@
     font-size: 16px;
     line-height: 0;
     display: block;
-    position: relative;
-    transform: translateZ(25px);
 }
 
 .vertical-navbar a span {
@@ -80,7 +75,7 @@
 .vertical-navbar li:hover>a:before,
 .vertical-navbar .active:before {
     visibility: visible;
-    width: 25px;
+    width: 100%;
 }
 
 .vertical-navbar a:hover,
@@ -90,6 +85,7 @@
     color: white;
 }
 
+/* Mobile Navigation */
 .mobile-nav-toggle {
     color: white;
     font-size: 28px;
@@ -103,30 +99,6 @@
 }
 
 @media (max-width: 991px) {
-    .navbar-mobile {
-        width: 100%;
-        height: auto;
-        padding-top: 10px;
-    }
-
-    .navbar-mobile ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-mobile li {
-        margin-bottom: 15px;
-    }
-
-    .navbar-mobile a {
-        padding: 12px 10px;
-    }
-
-    .navbar-mobile a span {
-        display: none;
-    }
-
     .mobile-nav-toggle {
         display: block;
     }
