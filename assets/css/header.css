@@ -2,20 +2,20 @@
 # Header Section
 --------------------------------------------------------------*/
 
-#header .color-mode {
+#hero .color-mode {
     position: relative;
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
-#header .theme-buttons {
+#hero .theme-buttons {
     display: flex;
     gap: 10px;
     margin-left: 10px;
 }
 
-#header .theme-button {
+#hero .theme-button {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -27,39 +27,39 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#header .theme-button[data-theme="light"] {
+#hero .theme-button[data-theme="light"] {
     background-color: var(--background-light);
 }
 
-#header .theme-button[data-theme="dark"] {
+#hero .theme-button[data-theme="dark"] {
     background-color: var(--background-dark);
 }
 
-#header .theme-button[data-theme="blue"] {
+#hero .theme-button[data-theme="blue"] {
     background-color: var(--theme-blue);
 }
 
-#header .theme-button[data-theme="pink"] {
+#hero .theme-button[data-theme="pink"] {
     background-color: var(--theme-pink);
 }
 
-#header .theme-button[data-theme="green"] {
+#hero .theme-button[data-theme="green"] {
     background-color: var(--theme-green);
 }
 
-#header .theme-button[data-theme="red"] {
+#hero .theme-button[data-theme="red"] {
     background-color: var(--background-red);
 }
 
-#header .theme-button[data-theme="yellow"] {
+#hero .theme-button[data-theme="yellow"] {
     background-color: var(--theme-yellow);
 }
 
-#header .theme-button[data-theme="purple"] {
+#hero .theme-button[data-theme="purple"] {
     background-color: var(--background-purple);
 }
 
-#header .theme-button::before {
+#hero .theme-button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -71,13 +71,13 @@
     pointer-events: none;
 }
 
-#header .theme-button:hover {
+#hero .theme-button:hover {
     transform: scale(1.2);
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
         6px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-#header .theme-button::after {
+#hero .theme-button::after {
     content: attr(title);
     position: absolute;
     bottom: 120%;
@@ -96,12 +96,12 @@
     z-index: 2;
 }
 
-#header .theme-button:hover::after {
+#hero .theme-button:hover::after {
     opacity: 1;
     visibility: visible;
 }
 
-#header h4.welcome-text {
+#hero h4.welcome-text {
     color: var(--theme-color);
     text-transform: uppercase;
     font-size: 1.2em;
@@ -113,7 +113,7 @@
     padding: 0 0 0 20px;
 }
 
-#header h2.greeting {
+#hero h2.greeting {
     font-size: 1.8em;
     font-weight: 400;
     margin: 10px 0;
@@ -122,7 +122,7 @@
     padding: 0 0 0 20px;
 }
 
-#header h1.name {
+#hero h1.name {
     font-size: 2em;
     font-weight: 700;
     margin: 10px 0;
@@ -132,17 +132,17 @@
     padding: 0 0 0 20px;
 }
 
-#header h1.name a {
+#hero h1.name a {
     color: var(--theme-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
-#header h1.name a:hover {
+#hero h1.name a:hover {
     color: var(--theme-color);
 }
 
-#header h2.role {
+#hero h2.role {
     font-size: 1.5em;
     font-weight: 500;
     margin: 10px 0;
@@ -151,12 +151,12 @@
     padding: 0 0 0 20px;
 }
 
-#header .typed {
+#hero .typed {
     color: var(--theme-color);
     font-weight: 500;
 }
 
-#header .education-intro p {
+#hero .education-intro p {
     font-size: 1.1em;
     font-weight: 300;
     margin: 20px 0;
@@ -220,7 +220,7 @@
     margin: 0;
 }
 
-#header .social-links {
+#hero .social-links {
     position: fixed;
     top: 50%;
     right: 0;
@@ -231,7 +231,7 @@
     z-index: 2;
 }
 
-#header .social-links a {
+#hero .social-links a {
     text-decoration: none;
     transition: color 0.3s;
     font-size: 16px;
@@ -499,7 +499,7 @@
     position: relative;
 }
 
-#header .social-links {
+#hero .social-links {
     display: flex;
     gap: 15px;
     padding: 20px 0;
@@ -507,7 +507,7 @@
     margin: 20px 0;
 }
 
-#header .social-links a {
+#hero .social-links a {
     font-size: 16px;
     line-height: 1;
     margin-right: 8px;
@@ -523,35 +523,35 @@
     text-decoration: none;
 }
 
-#header .social-links a:hover {
+#hero .social-links a:hover {
     transform: translateY(-5px);
 }
 
-#header .social-links a.twitter {
+#hero .social-links a.twitter {
     background: #1da1f2;
 }
 
-#header .social-links a.linkedin {
+#hero .social-links a.linkedin {
     background: #0077b5;
 }
 
-#header .social-links a.google-plus {
+#hero .social-links a.google-plus {
     background: #db4437;
 }
 
-#header .social-links a.youtube {
+#hero .social-links a.youtube {
     background: #ff0000;
 }
 
-#header .social-links a.github {
+#hero .social-links a.github {
     background: #333;
 }
 
-#header .social-links a.whatsapp {
+#hero .social-links a.whatsapp {
     background: #25d366;
 }
 
-#header .resume-button {
+#hero .resume-button {
     display: flex;
     justify-content: left;
     gap: 20px;

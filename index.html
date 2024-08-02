@@ -45,9 +45,29 @@
 </head>
 
 <body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none" aria-label="Toggle Navigation"></i>
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a class="nav-link active" href="#hero" aria-label="Home"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
+        <li><a class="nav-link" href="#about" aria-label="About"><i class="bi bi-person"></i> <span>About</span></a></li>
+        <li><a class="nav-link" href="#resume" aria-label="Resume"><i class="bi bi-file-earmark"></i> <span>Resume</span></a></li>
+        <li><a class="nav-link" href="#skills" aria-label="Skills"><i class="bi bi-gear"></i> <span>Skills</span></a></li>
+        <li><a class="nav-link" href="#clients" aria-label="Clients"><i class="bi bi-people"></i> <span>Clients</span></a></li>
+        <li><a class="nav-link" href="#services" aria-label="Services"><i class="bi bi-hdd-stack"></i> <span>Services</span></a></li>
+        <li><a class="nav-link" href="#testimonials" aria-label="Testimonials"><i class="bi bi-chat-dots"></i> <span>Testimonials</span></a></li>
+        <li><a class="nav-link" href="#contact" aria-label="Contact"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <div class="scene">
         <div class="box">
           <div class="face front">LM</div>
@@ -82,19 +102,6 @@
       <div class="education-intro">
         <p>MBA in Business Analytics & <br>MCA in Software Engineering</p>
       </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header" aria-label="Home"><i class="bi bi-house-door"></i><span>Home</span></a></li>
-          <li><a class="nav-link" href="#about" aria-label="About"><i class="bi bi-person"></i><span>About</span></a></li>
-          <li><a class="nav-link" href="#resume" aria-label="Resume"><i class="bi bi-file-earmark-text"></i><span>Resume</span></a></li>
-          <li><a class="nav-link" href="#skills" aria-label="Skills"><i class="bi bi-tools"></i><span>Skills</span></a></li>
-          <li><a class="nav-link" href="#clients" aria-label="Clients"><i class="bi bi-people"></i><span>Clients</span></a></li>
-          <li><a class="nav-link" href="#services" aria-label="Services"><i class="bi bi-briefcase"></i><span>Services</span></a></li>
-          <li><a class="nav-link" href="#testimonials" aria-label="Testimonials"><i class="bi bi-chat-dots"></i><span>Testimonials</span></a></li>
-          <li><a class="nav-link" href="#contact" aria-label="Contact"><i class="bi bi-envelope"></i><span>Contact</span></a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle Navigation"></i>
-      </nav>
       <div class="social-links">
         <a href="#" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
@@ -108,7 +115,7 @@
         <a class="primary_btn tr-bg" href="#"><span>Download CV</span></a>
       </div>
     </div>
-  </header><!-- End Header -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -202,13 +209,11 @@
                   and budget. Achieved a 20% increase in project efficiency within the last two years. Committed to
                   continuous learning and driving strategic initiatives.</em>
               </p>
-              <p>
               <ul>
                 <li>Abu Dhabi, Abu Dhabi Emirates, UAE</li>
                 <li>(+971) 50-869-2281</li>
                 <li>krystielm.sweety@gmail.com</li>
               </ul>
-              </p>
             </div>
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
@@ -243,7 +248,6 @@
               <h4>Technical Architect</h4>
               <h5>January 2023 - July 2023</h5>
               <p><em>Abu Dhabi Digital Authority, Abu Dhabi, UAE </em></p>
-              <p>
               <ul>
                 <li>Led the TAMM project, the largest government digital initiative involving 50+ entities. Played a key
                   role in the TAMM 2.0 release, WB Migration, DLS team, and contributed to multiple entity services like
@@ -263,13 +267,11 @@
                 <li>Executed migration scripts for non-WB projects, verifying preview code for successful project
                   transitions, ensuring a seamless transition process and client satisfaction.</li>
               </ul>
-              </p>
             </div>
             <div class="resume-item">
               <h4>Manager - Digital and Customer Transformation</h4>
               <h5>January 2022 - December 2022</h5>
               <p><em>KPMG Lower Gulf, Abu Dhabi, UAE </em></p>
-              <p>
               <ul>
                 <li>Played a crucial role in the TAMM project involving 50+ entities. Contributed to the DED services
                   like Investor Journey Phase II, Takamul, and mobility services for AD Police and AD Customs.</li>
@@ -290,13 +292,11 @@
                 <li>Wrote unit test cases for each part using Jest and Enzyme, ensuring a 30% increase in the
                   reliability and quality of the codebase.</li>
               </ul>
-              </p>
             </div>
             <div class="resume-item">
               <h4>Lead Consultant</h4>
               <h5>August 2019 - December 2021</h5>
               <p><em>Xebia IT Architects India Pvt Ltd, Abu Dhabi, UAE </em></p>
-              <p>
               <ul>
                 <li>Played an integral role in the TAMM project involving 50+ entities. Involved in DED services like
                   Amendment, Consolidation 6x6 and 12x12 Services, and ADM Services like J3 Build/J14 Buy a Home teams.
@@ -316,13 +316,11 @@
                 <li>Implemented Git for repository management and CI/CD pipeline, leading to a 40% decrease in
                   deployment time and improved release management.</li>
               </ul>
-              </p>
             </div>
             <div class="resume-item">
               <h4>Software Engineer</h4>
               <h5>January 2019 - May 2019</h5>
               <p><em>Utthunga Technologies, Bengaluru, IN </em></p>
-              <p>
               <ul>
                 <li>Innovated and implemented new features leveraging reusable AngularJS components on the front-end,
                   resulting in a 15% improvement in application functionality and user experience.</li>
@@ -339,13 +337,11 @@
                 <li>Created and maintained documentation for software designs, architecture, and user manuals, providing
                   essential resources for team collaboration and future development.</li>
               </ul>
-              </p>
             </div>
             <div class="resume-item">
               <h4>Technology Analyst</h4>
               <h5>August 2015 - November 2018</h5>
               <p><em>Edgeverve Systems Limited, Bengaluru, IN </em></p>
-              <p>
               <ul>
                 <li>Developed innovative features using reusable components created with PolymerJS/AngularJS on the
                   front-end, resulting in a 20% enhancement in application functionality and user experience.</li>
@@ -362,13 +358,11 @@
                 <li>Wrote queries for CRUD operations on tables, enabling efficient database manipulation and data
                   management.</li>
               </ul>
-              </p>
             </div>
             <div class="resume-item">
               <h4>Systems Engineer</h4>
               <h5>February 2014 - July 2015</h5>
               <p><em>Infosys Limited, Bengaluru, IN</em></p>
-              <p>
               <ul>
                 <li>Successfully completed the Java Stream internship, demonstrating proficiency in Java programming and
                   clearing all assessment exams.</li>
@@ -382,7 +376,6 @@
                 <li>Implemented modifications to Video Frame code in Flex Builder, enhancing visual aspects and
                   functionality, leading to a 15% improvement in user engagement.</li>
               </ul>
-              </p>
             </div>
           </div>
         </div>
