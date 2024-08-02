@@ -14,7 +14,7 @@
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css">
@@ -25,10 +25,6 @@
 
   <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
   <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-    rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="assets/css/about.css">
@@ -90,7 +86,7 @@
           <li><a class="nav-link" href="#skills" aria-label="Skills"><i class="bi bi-gear"></i><span>Skills</span></a></li>
           <li><a class="nav-link" href="#clients" aria-label="Clients"><i class="bi bi-people"></i><span>Clients</span></a></li>
           <li><a class="nav-link" href="#services" aria-label="Services"><i class="bi bi-hdd-stack"></i><span>Services</span></a></li>
-          <li><a class="nav-link" href="#testimonial" aria-label="Testimonial"><i class="bi bi-chat-dots"></i><span>Testimonial</span></a></li>
+          <li><a class="nav-link" href="#testimonials" aria-label="Testimonials"><i class="bi bi-chat-dots"></i><span>Testimonials</span></a></li>
           <li><a class="nav-link" href="#contact" aria-label="Contact"><i class="bi bi-envelope"></i><span>Contact</span></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle Navigation"></i>
@@ -770,6 +766,8 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+        <div class="owl-carousel testimonials-carousel">
+        </div>
       </div>
     </section><!-- End Testimonials Section -->
 
@@ -780,74 +778,70 @@
           <h2>Contact</h2>
           <p>Get in Touch</p>
         </div>
-        <div class="contact-content">
-          <div class="contact-cards">
-            <div class="contact-card flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="icon-circle">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <h3>Address</h3>
-                </div>
-                <div class="flip-card-back">
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-card flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="icon-circle">
-                    <i class="bi bi-envelope-fill"></i>
-                  </div>
-                  <h3>Email</h3>
-                </div>
-                <div class="flip-card-back">
-                  <p>krystielm.sweety@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-card flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="icon-circle">
-                    <i class="bi bi-telephone-fill"></i>
-                  </div>
-                  <h3>Phone</h3>
-                </div>
-                <div class="flip-card-back">
-                  <p>+971-50-869-2281</p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-card flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="icon-circle">
-                    <i class="bi bi-share-fill"></i>
-                  </div>
-                  <h3>Social Profiles</h3>
-                </div>
-                <div class="flip-card-back">
-                  <div class="social-links">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="google"><i class="bi bi-google"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
+        <div class="row mt-2">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14523.854925402984!2d54.364295602924656!3d24.48671347863513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e665bb0e81139%3A0x424fba2bb8b57878!2sMajlis%20Grand%20Mercure%20Residence%20Abu%20Dhabi!5e0!3m2!1sen!2sus!4v1718312502990!5m2!1sen!2sus"
-              frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="true" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="google"><i class="bi bi-google"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Me</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Me</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
           </div>
         </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14523.854925402984!2d54.364295602924656!3d24.48671347863513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e665bb0e81139%3A0x424fba2bb8b57878!2sMajlis%20Grand%20Mercure%20Residence%20Abu%20Dhabi!5e0!3m2!1sen!2sus!4v1718312502990!5m2!1sen!2sus"
+            frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="true" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
       </div>
     </section><!-- End Contact Section -->
 
