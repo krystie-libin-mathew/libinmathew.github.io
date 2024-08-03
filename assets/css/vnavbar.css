@@ -70,7 +70,6 @@
     opacity: 1;
 }
 
-
 .vertical-navbar a:hover:before,
 .vertical-navbar li:hover>a:before,
 .vertical-navbar .active:before {
