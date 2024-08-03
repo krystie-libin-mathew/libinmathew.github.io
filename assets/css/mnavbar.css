@@ -19,6 +19,10 @@
     .horizontal-navbar ul {
         display: none;
     }
+    
+    .vertical-navbar ul {
+        display: none;
+    }
 }
 
 .navbar-mobile {
