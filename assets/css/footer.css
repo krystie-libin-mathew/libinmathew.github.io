@@ -2,31 +2,35 @@
 # Footer Section
 --------------------------------------------------------------*/
 
-#footer .credits {
+#footer {
   position: fixed;
-  right: 0;
-  left: 0;
   bottom: 0;
-  padding: 15px;
-  text-align: right;
-  font-size: 13px;
-  color: white;
+  width: 100%;
+  background: rgba(var(--theme-color-rgb), 0.9); 
   z-index: 999999;
+}
+
+#footer .credits {
+  padding: 5px;
+  text-align: right;
+  font-size: 14px;
+  color: white;
 }
 
 @media (max-width: 992px) {
   #footer .credits {
     text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.9);
   }
 }
 
 #footer .credits a {
-  color: var(--theme-color);
+  color: black;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: var(--theme-shadow-color);
+  color: white;
 }
