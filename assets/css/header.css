@@ -178,9 +178,6 @@
     overflow-y: auto;
 }
 
-#header * {
-    transition: ease-in-out 0.3s;
-}
 
 #header h1 {
     font-size: 48px;

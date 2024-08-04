@@ -28,5 +28,5 @@
 }
 
 #footer .credits a:hover {
-  color: white;
+  color: var(--theme-shadow-color);
 }
