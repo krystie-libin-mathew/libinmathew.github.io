@@ -56,7 +56,11 @@
 }
 
 #header .theme-button[data-theme="purple"] {
-    background-color: var(--background-purple);
+    background-color: var(--theme-purple);
+}
+
+#header .theme-button[data-theme="brown"] {
+    background-color: var(--theme-brown);
 }
 
 #header .theme-button::before {
@@ -75,25 +79,6 @@
     transform: scale(1.2);
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
         6px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-#header .theme-button::after {
-    content: attr(title);
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: white;
-    padding: 6px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    font-size: 9.6px;
-    font-weight: 500;
-    z-index: 2;
 }
 
 #header .theme-button:hover::after {
