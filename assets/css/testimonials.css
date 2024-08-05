@@ -10,9 +10,6 @@
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -58,14 +55,13 @@
   font-size: 14px;
   margin: 0 15px 0 15px;
   padding: 20px 20px 50px 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   border-radius: 6px;
   z-index: 1;
   text-align: justify;
   text-justify: inter-word;
-  border: 4px solid rgba(var(--theme-color-rgb), 0.3);
 }
 
 .testimonials .swiper-pagination {
