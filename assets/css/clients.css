@@ -2,17 +2,45 @@
 # 4. Clients Section
 --------------------------------------------------------------*/
 
+.clients .swiper-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.clients .swiper-wrapper {
+    display: flex;
+}
+
+.clients .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
 .clients .icon-box {
     text-align: center;
     background: rgba(204, 204, 204, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 80px 20px;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 10px;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients .icon-box::before {
@@ -30,6 +58,8 @@
 .clients .icon-box:hover {
     background: white;
     border-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .clients .icon-box:hover::before {
@@ -43,9 +73,20 @@
     transition: transform 0.3s ease-in-out;
     width: 100%;
     height: 200px;
-    object-fit: contain !important;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 .clients .icon-box:hover img {
     transform: scale(1.1);
+}
+
+/* Swiper Pagination and Navigation */
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgba(255, 255, 255, 0.2);
 }
