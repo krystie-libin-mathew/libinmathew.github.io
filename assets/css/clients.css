@@ -11,6 +11,7 @@
 
 .clients .swiper-wrapper {
     display: flex;
+    /* transition: transform 0.5s ease-in-out; */
 }
 
 .clients .swiper-slide {
@@ -23,6 +24,14 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.clients .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .clients .icon-box {
@@ -36,8 +45,8 @@
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 10px;
-    width: 100%;
-    height: 100%; 
+    width: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,12 +90,49 @@
     transform: scale(1.1);
 }
 
-/* Swiper Pagination and Navigation */
 .swiper-pagination {
-    bottom: 10px;
+    bottom: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.8);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--theme-color);
+    transform: scale(1.2);
+}
+
+.swiper-pagination-bullet:hover {
+    background: var(--theme-color);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     color: rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
 }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--theme-color);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
