@@ -221,8 +221,7 @@
       },
 
       1200: {
-        slidesPerView: 1,
-        spaceBetween: 20
+        slidesPerView: 3,
       }
     }
   });
