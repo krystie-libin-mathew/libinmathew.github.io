@@ -17,6 +17,7 @@
 .contact .info-box {
   color: #444444;
   padding: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
   flex: 1;
   text-align: center;
@@ -26,20 +27,32 @@
   font-size: 24px;
   color: var(--theme-color);
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
   padding: 14px;
   background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  text-decoration: none;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.contact .info-box .social-links i.bi {
+  font-size: 16px;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   margin: 10px 0 5px;
 }
 
 .contact .info-box p {
   padding: 0;
-  color: white;
+  color: var(--theme-color);
   line-height: 24px;
   font-size: 14px;
   margin: 0;
@@ -162,7 +175,6 @@
 
 .map-container {
   flex: 1;
-  border-radius: 10px;
   overflow: hidden;
   height: 380px;
   position: relative;
