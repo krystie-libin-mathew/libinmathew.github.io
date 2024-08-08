@@ -16,12 +16,13 @@
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  max-height: 320px;
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   background: var(--theme-color);
   border-radius: 5px;
   display: flex;
