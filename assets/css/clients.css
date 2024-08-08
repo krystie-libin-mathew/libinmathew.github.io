@@ -2,40 +2,18 @@
 # 4. Clients Section
 --------------------------------------------------------------*/
 
-.clients .swiper-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.clients .swiper-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.clients .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 250px;
-    box-sizing: border-box;
-    padding: 20px 0;
-    overflow: hidden;
-}
-
 .clients .icon-box {
     text-align: center;
     background: rgba(204, 204, 204, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 10px;
+    padding: 80px 20px;
     transition: box-shadow 0.6s ease-in-out, transform 0.6s ease-in-out;
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
