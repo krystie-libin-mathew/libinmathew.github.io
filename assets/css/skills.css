@@ -37,12 +37,36 @@
 
 .skills .list-icons {
   font-size: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.skills .list-icons .list-inline-item i {
+.skills .list-icons li {
+  text-align: center;
+}
+
+.skills .list-icons svg {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.skills .list-icons svg:hover {
+  transform: scale(1.1);
+  fill: var(--theme-color);
+  color: var(--theme-color);
+}
+
+.skills .list-icons h6 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.skills .list-icons .list-inline-item svg {
   transition: color 0.3s;
 }
 
-.skills .list-icons .list-inline-item i:hover {
+.skills .list-icons .list-inline-item svg:hover {
   color: var(--theme-color);
 }
