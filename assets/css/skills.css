@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # 3. Skills Section
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -31,10 +32,15 @@
   height: 10px;
   transition: 0.9s;
   background: var(--theme-color);
+  transition: width 0.9s ease-in-out;
 }
 
 .skills .list-icons {
   font-size: 48px;
+}
+
+.skills .list-icons .list-inline-item i {
+  transition: color 0.3s;
 }
 
 .skills .list-icons .list-inline-item i:hover {

@@ -100,7 +100,6 @@
   flex: 1;
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
   height: 380px;
 }
 
@@ -209,7 +208,6 @@
   padding: 10px 20px;
   background: rgba(var(--theme-color-rgb), 0.8);
   color: white;
-  border-radius: 5px;
   text-align: center;
 }
 
