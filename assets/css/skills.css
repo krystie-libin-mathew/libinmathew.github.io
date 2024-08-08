@@ -35,11 +35,22 @@
   transition: width 0.9s ease-in-out;
 }
 
+.skills-group {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skills-group .subheading {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);;
+}
+
 .skills .list-icons {
-  font-size: 48px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .skills .list-icons li {
@@ -55,12 +66,11 @@
 .skills .list-icons svg:hover {
   transform: scale(1.1);
   fill: var(--theme-color);
-  color: var(--theme-color);
 }
 
 .skills .list-icons h6 {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 10px;
 }
 
 .skills .list-icons .list-inline-item svg {
