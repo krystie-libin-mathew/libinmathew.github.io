@@ -1,13 +1,14 @@
 /*--------------------------------------------------------------
 # 7. Contact Section
 --------------------------------------------------------------*/
-.contact-top-row {
+
+.contact .contact-top-row {
   display: flex;
   gap: 20px;
   align-items: flex-start;
 }
 
-.info-boxes {
+.contact .info-boxes {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -23,6 +24,14 @@
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.contact .info-box:hover {
+  background: var(--theme-color);
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .contact .info-box i.bi {
@@ -45,6 +54,11 @@
   font-size: 16px;
 }
 
+.contact .info-box:hover i.bi {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
 .contact .info-box h3 {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
@@ -58,6 +72,10 @@
   line-height: 24px;
   font-size: 14px;
   margin: 0;
+}
+
+.contact .info-box:hover p {
+  color: white;
 }
 
 .contact .info-box .social-links {
