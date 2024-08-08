@@ -2,6 +2,62 @@
 # 3. Skills Section
 --------------------------------------------------------------*/
 
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills .skills-group {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.skills .skills-group .subheading {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.skills .skills-group .list-icons {
+  font-size: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills .skills-group .list-icons li {
+  text-align: center;
+}
+
+.skills .skills-group .list-icons svg {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.skills .skills-group .list-icons svg:hover {
+  transform: scale(1.1);
+  fill: var(--theme-color);
+}
+
+.skills .skills-group .list-icons h6 {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.skills .skills-group .list-icons .list-inline-item svg {
+  transition: color 0.3s;
+}
+
+.skills .skills-group .list-icons .list-inline-item svg:hover {
+  color: var(--theme-color);
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -33,50 +89,4 @@
   transition: 0.9s;
   background: var(--theme-color);
   transition: width 0.9s ease-in-out;
-}
-
-.skills-group {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 5px 10px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.skills-group .subheading {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);;
-}
-
-.skills .list-icons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skills .list-icons li {
-  text-align: center;
-}
-
-.skills .list-icons svg {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s, fill 0.3s;
-}
-
-.skills .list-icons svg:hover {
-  transform: scale(1.1);
-  fill: var(--theme-color);
-}
-
-.skills .list-icons h6 {
-  margin-top: 10px;
-  font-size: 10px;
-}
-
-.skills .list-icons .list-inline-item svg {
-  transition: color 0.3s;
-}
-
-.skills .list-icons .list-inline-item svg:hover {
-  color: var(--theme-color);
 }
