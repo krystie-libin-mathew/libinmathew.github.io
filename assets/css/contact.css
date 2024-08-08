@@ -29,8 +29,8 @@
   font-size: 20px;
   color: var(--theme-color);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
   display: inline-flex;
@@ -46,7 +46,7 @@
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   margin: 5px 0;
@@ -67,7 +67,7 @@
 }
 
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   line-height: 1;
   margin-right: 8px;
