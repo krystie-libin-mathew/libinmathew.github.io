@@ -68,13 +68,13 @@
   text-align: center;
 }
 
-.skills .skills-group .list-icons svg {
+.skills .skills-group .list-icons img {
   width: 60px;
   height: 60px;
   transition: transform 0.3s, fill 0.3s;
 }
 
-.skills .skills-group .list-icons svg:hover {
+.skills .skills-group .list-icons img:hover {
   transform: scale(1.1);
   fill: var(--theme-color);
 }
