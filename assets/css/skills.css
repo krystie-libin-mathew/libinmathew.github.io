@@ -10,16 +10,44 @@
 
 .skills .skills-group {
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 0 10px 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.skills .skills-group.programming-languages {
+  flex: 1 1 50%;
+}
+
+.skills .skills-group.frameworks {
+  flex: 1 1 30%;
+}
+
+.skills .skills-group.libraries {
+  flex: 1 1 15%;
+}
+
+.skills .skills-group.communication-and-collaboration {
+  flex: 1 1 5%;
+}
+
+.skills .skills-group.version-control,
+.skills .skills-group.data-analysis-and-visualization,
+.skills .skills-group.api-platforms,
+.skills .skills-group.design-and-user-experience,
+.skills .skills-group.ide {
+  flex: 1 1 0%;
 }
 
 .skills .skills-group .subheading {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 20px;
+  padding: 0 5px;
 }
 
 .skills .skills-group .list-icons {
@@ -32,6 +60,7 @@
 
 .skills .skills-group .list-icons li {
   text-align: center;
+  flex: 1 1 10%;
 }
 
 .skills li.list-inline-item {
@@ -52,7 +81,8 @@
 
 .skills .skills-group .list-icons h6 {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
   justify-content: center;
 }
