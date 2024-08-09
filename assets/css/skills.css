@@ -5,13 +5,13 @@
 .skills .skills-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
 }
 
 .skills .skills-group {
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.2);
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 8px;
 }
 
@@ -27,9 +27,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin: 0;
 }
 
 .skills .skills-group .list-icons li {
+  text-align: center;
+}
+
+.skills li.list-inline-item {
+  margin: 0;
   text-align: center;
 }
 
@@ -45,8 +51,10 @@
 }
 
 .skills .skills-group .list-icons h6 {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 12px;
+  text-align: center;
+  justify-content: center;
 }
 
 .skills .skills-group .list-icons .list-inline-item svg {
@@ -85,7 +93,6 @@
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.9s;
   background: var(--theme-color);
   transition: width 0.9s ease-in-out;
 }
