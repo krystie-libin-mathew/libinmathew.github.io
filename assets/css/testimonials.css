@@ -47,6 +47,14 @@
   transition: color 0.4s ease;
 }
 
+.testimonials .testimonial-item .rating {
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item a {
+  color: #f4e700;
+}
+
 .testimonials .testimonial-item:hover h4 {
   color: white;
 }
@@ -98,7 +106,6 @@
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 10px;
   bottom: -6px;
   position: relative;
 }

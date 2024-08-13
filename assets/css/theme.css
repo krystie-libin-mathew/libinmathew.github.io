@@ -17,7 +17,7 @@
     --theme-yellow-line: #FFAC07;
     --theme-yellow-rgb: 255, 193, 7;
     --theme-yellow-shadow: #EDB100;
-    --theme-yellow: #FFC107;
+    --theme-yellow: #FFBD39;
 
     --theme-purple-line: #E056FA;
     --theme-purple-rgb: 217, 44, 249;
@@ -28,6 +28,56 @@
     --theme-brown-rgb: 184, 160, 126;
     --theme-brown-shadow: #A59071;
     --theme-brown: #B8A07E;
+
+    --theme-red-line: #F04B39;
+    --theme-red-rgb: 239, 55, 36;
+    --theme-red-shadow: #D73120;
+    --theme-red: #EF3724;
+
+    --theme-cyan-line: #338CA8;
+    --theme-cyan-rgb: 29, 128, 159;
+    --theme-cyan-shadow: #1A738F;
+    --theme-cyan: #1D809F;
+
+    /* --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --dark: #343a40;
+
+    color: #ffd200;
+    color: #c48e0b;
+    color: #e45447;
+    color: #ffc000;
+    color: #ec887f;
+    color: #f8b600;
+    color: #4cd3e3;
+    color: #f09359;
+    color: #eb6b55;
+    color: #f44a40;
+    color: #f4e700;
+    color: #38a4ff;
+    color: #f54940;
+    color: #52c5fd;
+
+    color: #6382e6;
+    color: #e66686;
+    color: #f09359;
+    color: #73fbaf;
+    color: #a367e7;
+ */
+    /* --theme-royalpurple-line: #BFA98A;
+    --theme-royalpurple-rgb: linear-gradient(90deg, rgb(68, 88, 220) 0%, rgb(133, 79, 238) 100%);
+    --theme-royalpurple-shadow: #A59071;
+    --theme-royalpurple: linear-gradient(90deg, #4458dc 0%, #854fee 100%); */
 }
 
 [data-theme="blue"] {
@@ -71,3 +121,23 @@
     --theme-line-color: var(--theme-brown-line);
     --theme-shadow-color: var(--theme-brown-shadow);
 }
+
+[data-theme="red"] {
+    --theme-color-rgb: var(--theme-red-rgb);
+    --theme-color: var(--theme-red);
+    --theme-line-color: var(--theme-red-line);
+    --theme-shadow-color: var(--theme-red-shadow);
+}
+
+[data-theme="cyan"] {
+    --theme-color-rgb: var(--theme-cyan-rgb);
+    --theme-color: var(--theme-cyan);
+    --theme-line-color: var(--theme-cyan-line);
+    --theme-shadow-color: var(--theme-cyan-shadow);
+}
+
+/* [data-theme="royalpurple"] {
+    --gradient-angle: 90deg;
+    --gradient-color1: #4458dc;
+    --gradient-color2: #854fee;
+} */

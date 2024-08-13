@@ -63,6 +63,14 @@
     background-color: var(--theme-brown);
 }
 
+#header .theme-button[data-theme="red"] {
+    background-color: var(--theme-red);
+}
+
+#header .theme-button[data-theme="cyan"] {
+    background-color: var(--theme-cyan);
+}
+
 #header .theme-button::before {
     content: '';
     position: absolute;
