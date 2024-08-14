@@ -18,29 +18,21 @@
     /**
     * Color Box position on top and toggle helper function
     */
-    const togglePalette = document.getElementById('toggle-palette');
-    const themePalette = document.getElementById('theme-palette');
+    document.getElementById('toggle-palette').addEventListener('click', function () {
+        const themePalette = document.getElementById('theme-palette');
+        const icon = document.getElementById('icon-toggle');
 
-    function togglePaletteVisibility() {
-        themePalette.classList.toggle('collapsed');
-        // const isCollapsed = themePalette.classList.contains('collapsed');
-        // togglePalette.querySelector('span').innerHTML = isCollapsed ? '&#9660;' : '&#9650;'; // Change arrow direction
-    }
+        // Toggle the visibility of the palette
+        themePalette.classList.toggle('show');
 
-    // Initialize with palette visible or hidden based on your preference
-    themePalette.classList.add('collapsed'); // Start hidden
-
-    togglePalette.addEventListener('click', togglePaletteVisibility);
-
-    document.querySelectorAll('.theme-button').forEach(button => {
-        button.addEventListener('click', function () {
-            const theme = this.getAttribute('data-theme');
-            document.documentElement.setAttribute('data-theme', theme);
-
-            // Collapse the palette after a theme is selected
-            themePalette.classList.add('collapsed');
-            togglePalette.querySelector('span').innerHTML = '🎨'; // Change to down arrow
-        });
+        // Toggle the icon class
+        if (themePalette.classList.contains('show')) {
+            icon.classList.remove('bi-palette');
+            icon.classList.add('bi-palette-fill');
+        } else {
+            icon.classList.remove('bi-palette-fill');
+            icon.classList.add('bi-palette');
+        }
     });
 
     /**
