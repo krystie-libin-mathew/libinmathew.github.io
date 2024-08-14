@@ -11,13 +11,15 @@
 
 #header .theme-buttons {
     display: flex;
-    gap: 10px;
-    margin-left: 10px;
+    gap: 5px;
+    position: absolute;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 #header .theme-button {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid transparent;
     cursor: pointer;
@@ -25,6 +27,24 @@
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2),
         4px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#header .theme-button:hover {
+    transform: scale(1.2);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
+        6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #header .theme-button[data-theme="light"] {
@@ -69,29 +89,6 @@
 
 #header .theme-button[data-theme="cyan"] {
     background-color: var(--theme-cyan);
-}
-
-#header .theme-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-}
-
-#header .theme-button:hover {
-    transform: scale(1.2);
-    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
-        6px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-#header .theme-button:hover::after {
-    opacity: 1;
-    visibility: visible;
 }
 
 #header h4.welcome-text {
