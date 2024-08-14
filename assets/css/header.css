@@ -372,6 +372,7 @@
     left: 30px;
     width: 70px;
     height: 70px;
+    perspective: 800px;
 }
 
 .box {
@@ -380,7 +381,7 @@
     position: relative;
     transform-style: preserve-3d;
     transform: rotateX(30deg) rotateY(45deg);
-    animation: rotate 10s infinite linear;
+    animation: rotate 5s infinite linear;
     transition: transform 0.5s;
 }
 
@@ -389,7 +390,8 @@
 }
 
 .box.reset {
-    animation: reset 0.5s forwards;
+    animation: none;
+    transform: rotateX(0deg) rotateY(0deg);
 }
 
 .face {
@@ -407,11 +409,11 @@
 }
 
 .front {
-    transform: rotateY(0deg) translateZ(25px);
+    transform: translateZ(25px);
 }
 
 .back {
-    transform: rotateX(180deg) translateZ(25px);
+    transform: rotateY(180deg) translateZ(25px);
 }
 
 .left {
@@ -432,20 +434,10 @@
 
 @keyframes rotate {
     from {
-        transform: rotateX(0) rotateY(0);
+        transform: rotateX(0deg) rotateY(0deg);
     }
 
     to {
         transform: rotateX(360deg) rotateY(360deg);
-    }
-}
-
-@keyframes reset {
-    from {
-        transform: rotateX(0) rotateY(0);
-    }
-
-    to {
-        transform: rotateX(0) rotateY(0);
     }
 }

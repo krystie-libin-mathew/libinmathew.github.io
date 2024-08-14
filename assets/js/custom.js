@@ -7,14 +7,12 @@
     const box = document.querySelector('.box');
 
     box.addEventListener('mouseover', () => {
-        box.classList.add('reset'); // Reset box to neutral position
-        setTimeout(() => box.classList.add('pause'), 500); // Add pause class after reset animation
+        box.classList.add('pause'); // Pause the rotation
     });
-
+    
     box.addEventListener('mouseout', () => {
-        box.classList.remove('pause', 'reset'); // Remove classes to resume rotation
+        box.classList.remove('pause'); // Resume the rotation
     });
-
 
     document.addEventListener('DOMContentLoaded', function () {
         const navbar = document.querySelector('#navbar');
