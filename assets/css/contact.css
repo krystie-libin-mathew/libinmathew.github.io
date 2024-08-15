@@ -19,7 +19,7 @@
 .contact .info-box {
   color: #444444;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
   flex: 1;
   text-align: center;
@@ -32,7 +32,7 @@
   background: var(--theme-color);
   color: white;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  transform: translateY(-10px) scale(1.05);
+  transform: translateY(-5px) scale(1.05);
 }
 
 .contact .info-box i.bi {
@@ -42,7 +42,7 @@
   width: 35px;
   height: 35px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   display: inline-flex;
   text-decoration: none;
   transition: 0.3s;
@@ -51,13 +51,57 @@
   line-height: 1;
 }
 
-.contact .info-box .social-links i.bi {
+.contact .info-box .social-links a i.bi {
   font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact .info-box .social-links a.twitter:hover i.bi {
+  background: #1da1f2;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.linkedin:hover i.bi {
+  background: #0077b5;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.google-plus:hover i.bi {
+  background: #db4437;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.youtube:hover i.bi {
+  background: #ff0000;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.github:hover i.bi {
+  background: #333;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.whatsapp:hover i.bi {
+  background: #25d366;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.slack:hover i.bi {
+  background: #4A154B;
+  transform: rotate(360deg);
+}
+
+.contact .info-box .social-links a.telegram:hover i.bi {
+  background: #0088CC;
+  transform: rotate(360deg);
+}
+
+.contact .info-box:hover i.bi {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .contact .info-box:hover i.bi:not(.social-links i.bi) {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
   transform: rotate(360deg);
 }
 
@@ -85,7 +129,6 @@
 
 .contact .info-box .social-links {
   margin-top: 10px;
-  display: flex;
   justify-content: center;
 }
 
@@ -104,7 +147,7 @@
 
 .contact .php-email-form {
   flex: 1;
-  padding: 30px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   height: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
