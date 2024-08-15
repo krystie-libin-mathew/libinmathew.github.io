@@ -3,7 +3,9 @@
 --------------------------------------------------------------*/
 
 header {
+    transition: ease-in-out 0.3s;
     position: relative;
+    z-index: 10;
 }
 
 #topbar #toggle-palette i {
@@ -20,7 +22,7 @@ header {
 
 header#topbar {
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     top: 0;
     left: 0;
@@ -119,6 +121,15 @@ header#topbar {
     height: 40px;
     opacity: 1;
     animation: fadeInLeft 0.9s ease-out;
+}
+
+.hide-topbar header#header.header-top {
+    top: 0;
+    margin-top: 0;
+}
+
+.show-topbar #topbar {
+    display: flex;
 }
 
 @keyframes slideDown {
@@ -220,7 +231,6 @@ header#topbar {
     z-index: 997;
     overflow-y: auto;
     margin-top: 80px;
-    padding: 20px;
     position: relative;
     z-index: 10;
 }
@@ -287,6 +297,8 @@ header#topbar {
     top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    margin-top: 0;
 }
 
 #header.header-top h2,
@@ -325,7 +337,6 @@ header#topbar {
         font-size: 26px;
     }
 }
-
 
 #header .social-links {
     position: fixed;
