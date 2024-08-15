@@ -1,10 +1,10 @@
 /*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
-
+/* 
 header {
     position: relative;
-}
+} */
 
 #topbar #toggle-palette i {
     font-size: 1.5rem;
@@ -25,9 +25,10 @@ header#topbar {
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
+    background: transparent;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    transition: background 0.3s ease;
 }
 
 #topbar .theme-button {
@@ -106,9 +107,9 @@ header#topbar {
     gap: 10px;
     padding: 10px;
     position: absolute;
-    left: 100px;
+    left: 80px;
     opacity: 0;
-    transition: opacity 0.3s ease, height 0.3s ease;
+    transition: opacity 0.3s ease, height 0.3s ease, background 0.3s ease;
     height: 0;
     overflow: hidden;
 }
@@ -117,6 +118,7 @@ header#topbar {
     display: flex;
     height: 40px;
     opacity: 1;
+    animation: fadeInLeft 0.9s ease-out;
 }
 
 @keyframes slideDown {
@@ -128,6 +130,18 @@ header#topbar {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

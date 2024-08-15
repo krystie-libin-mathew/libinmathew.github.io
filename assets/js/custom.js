@@ -21,15 +21,18 @@
     document.getElementById('toggle-palette').addEventListener('click', function () {
         const themePalette = document.getElementById('theme-palette');
         const icon = document.getElementById('icon-toggle');
+        const topBar = document.getElementById('topbar');
 
         // Toggle the palette visibility
         themePalette.classList.toggle('show');
 
-        // Change icon and color
+        // Change the top bar background when palette is shown
         if (themePalette.classList.contains('show')) {
+            topBar.style.backgroundColor = 'white'; // Show background color when visible
             icon.classList.remove('bi-palette');
             icon.classList.add('bi-palette-fill');
         } else {
+            topBar.style.backgroundColor = 'transparent'; // Hide background color when hidden
             icon.classList.remove('bi-palette-fill');
             icon.classList.add('bi-palette');
         }
@@ -41,6 +44,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         const navbar = document.querySelector('#navbar');
         const navLinks = document.querySelectorAll('.navbar a');
+        const topBar = document.querySelector('#topbar');
 
         // Function to set the navbar to vertical
         function setNavbarToVertical() {
@@ -54,8 +58,19 @@
             navbar.classList.add('horizontal-navbar');
         }
 
-        // Initial setup: Set navbar to vertical
+        // Function to show the top bar
+        function showTopBar() {
+            topBar.style.display = 'flex';
+        }
+
+        // Function to hide the top bar
+        function hideTopBar() {
+            topBar.style.display = 'none';
+        }
+
+        // Initial setup: Set navbar to vertical and hide top bar
         setNavbarToVertical();
+        showTopBar();
 
         // Add click event listener to each link
         navLinks.forEach(link => {
@@ -63,8 +78,10 @@
                 const section = this.getAttribute('data-section');
                 if (section === 'home') {
                     setNavbarToVertical();
+                    showTopBar();
                 } else {
                     setNavbarToHorizontal();
+                    hideTopBar();
                 }
             });
         });
@@ -74,8 +91,10 @@
             const section = window.location.hash.replace('#', '');
             if (section === 'home' || section === '') {
                 setNavbarToVertical();
+                showTopBar();
             } else {
                 setNavbarToHorizontal();
+                hideTopBar();
             }
         });
     });
