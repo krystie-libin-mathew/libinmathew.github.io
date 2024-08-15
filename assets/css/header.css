@@ -8,6 +8,16 @@ header {
     z-index: 10;
 }
 
+.header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+    align-items: flex-start;
+    padding: 0 50px;
+    flex-grow: 1;
+}
+
 #topbar #toggle-palette i {
     font-size: 1.5rem;
     color: var(--theme-color);
@@ -230,9 +240,9 @@ header#topbar {
     align-items: center;
     z-index: 997;
     overflow-y: auto;
-    margin-top: 80px;
-    position: relative;
-    z-index: 10;
+    display: flex;
+    overflow: hidden;
+    padding: 30px;
 }
 
 
@@ -282,7 +292,7 @@ header#topbar {
         margin-top: 15px;
     }
 
-    #header .container {
+    #header .header-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -319,9 +329,10 @@ header#topbar {
     margin-right: 20px !important;
 }
 
-#header.header-top .container {
+#header.header-top .header-content {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 #header.header-top .navbar {
