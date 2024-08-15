@@ -7,11 +7,10 @@ header {
 }
 
 #topbar #toggle-palette i {
-    width: 16px;
-    height: 16px;
     font-size: 1.5rem;
     color: var(--theme-color);
     transform: scale(1.2);
+    transition: transform 0.3s, color 0.3s;
 }
 
 #topbar #toggle-palette:hover i {
@@ -130,21 +129,16 @@ header#topbar {
     padding: 10px;
     position: absolute;
     left: 100px;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.3s ease, height 0.3s ease;
     height: 0;
     overflow: hidden;
 }
 
 #topbar #theme-palette.show {
-    display: block;
+    display: flex;
     height: 40px;
     opacity: 1;
-    padding: 10px;
-}
-
-#topbar #toggle-palette:hover {
-    transform: scale(1.1);
 }
 
 @keyframes slideDown {

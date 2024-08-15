@@ -22,10 +22,10 @@
         const themePalette = document.getElementById('theme-palette');
         const icon = document.getElementById('icon-toggle');
 
-        // Toggle the visibility of the palette
+        // Toggle the palette visibility
         themePalette.classList.toggle('show');
 
-        // Toggle the icon class
+        // Change icon and color
         if (themePalette.classList.contains('show')) {
             icon.classList.remove('bi-palette');
             icon.classList.add('bi-palette-fill');
