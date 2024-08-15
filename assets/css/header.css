@@ -28,17 +28,6 @@ header#topbar {
     background: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    transition: height 0.3s ease;
-}
-
-#topbar .theme-buttons {
-    display: flex;
-    gap: 5px;
-    position: absolute;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
-    opacity: 1;
-    transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 #topbar .theme-button {
@@ -70,14 +59,6 @@ header#topbar {
     }
 }
 
-#topbar .theme-button[data-theme="light"] {
-    background-color: var(--background-light);
-}
-
-#topbar .theme-button[data-theme="dark"] {
-    background-color: var(--background-dark);
-}
-
 #topbar .theme-button[data-theme="blue"] {
     background-color: var(--theme-blue);
 }
@@ -91,7 +72,7 @@ header#topbar {
 }
 
 #topbar .theme-button[data-theme="red"] {
-    background-color: var(--background-red);
+    background-color: var(--theme-red);
 }
 
 #topbar .theme-button[data-theme="yellow"] {
@@ -106,9 +87,6 @@ header#topbar {
     background-color: var(--theme-brown);
 }
 
-#topbar .theme-button[data-theme="red"] {
-    background-color: var(--theme-red);
-}
 
 #topbar .theme-button[data-theme="cyan"] {
     background-color: var(--theme-cyan);
