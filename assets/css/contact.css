@@ -6,32 +6,33 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  position: relative;
 }
 
 .contact .info-boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .contact .info-box {
   color: #444444;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   width: 100%;
   flex: 1;
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
-  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s, color 0.3s;
 }
 
 .contact .info-box:hover {
   background: var(--theme-color);
   color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) scale(1.05);
 }
 
 .contact .info-box i.bi {
@@ -41,7 +42,7 @@
   width: 35px;
   height: 35px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   display: inline-flex;
   text-decoration: none;
   transition: 0.3s;
@@ -54,16 +55,18 @@
   font-size: 16px;
 }
 
-.contact .info-box:hover i.bi {
-  background: rgba(0, 0, 0, 0.2);
+.contact .info-box:hover i.bi:not(.social-links i.bi) {
+  background: rgba(0, 0, 0, 0.3);
   color: white;
+  transform: rotate(360deg);
 }
 
 .contact .info-box h3 {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
-  margin: 5px 0;
+  margin: 10px 0;
+  transition: color 0.3s;
 }
 
 .contact .info-box p {
@@ -72,8 +75,10 @@
   line-height: 24px;
   font-size: 14px;
   margin: 0;
+  transition: color 0.3s;
 }
 
+.contact .info-box:hover h3,
 .contact .info-box:hover p {
   color: white;
 }
@@ -89,45 +94,53 @@
   color: white;
   line-height: 1;
   margin-right: 8px;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .contact .info-box .social-links a:hover {
   color: var(--theme-color);
+  transform: scale(1.2);
 }
 
 .contact .php-email-form {
   flex: 1;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   height: 380px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.contact .php-email-form:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact .php-email-form .error-message,
+.contact .php-email-form .sent-message,
+.contact .php-email-form .loading {
+  display: none;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
 }
 
 .contact .php-email-form .error-message {
-  display: none;
   background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
+  color: white;
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
   background: var(--theme-color);
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
+  color: white;
 }
 
 .contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--theme-color);
 }
 
 .contact .php-email-form .loading:before {
@@ -144,30 +157,31 @@
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s, border-color 0.3s;
   color: white;
   margin-bottom: 15px;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--theme-color);
 }
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
@@ -184,12 +198,13 @@
   border: 0;
   padding: 10px 30px;
   color: white;
-  transition: 0.4s;
-  border-radius: 4px;
+  transition: background 0.4s, transform 0.3s;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--theme-shadow-color);
+  transform: scale(1.05);
 }
 
 .map-container {
@@ -197,10 +212,10 @@
   overflow: hidden;
   height: 380px;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-
   .map-container {
     height: 300px;
   }
