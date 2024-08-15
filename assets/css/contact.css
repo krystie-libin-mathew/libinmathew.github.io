@@ -199,18 +199,6 @@
   position: relative;
 }
 
-.map-container::before {
-  content: "Find Me Here";
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background: rgba(var(--theme-color-rgb), 0.8);
-  color: white;
-  text-align: center;
-}
-
 @media (max-width: 768px) {
 
   .map-container {
