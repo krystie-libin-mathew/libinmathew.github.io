@@ -6,12 +6,12 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .contact .info-boxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   margin-top: 20px;
 }
@@ -51,9 +51,35 @@
   line-height: 1;
 }
 
+.contact .info-box .social-links {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.contact .info-box .social-links a {
+  font-size: 16px;
+  color: white;
+  line-height: 1;
+  margin-right: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact .info-box .social-links a:hover {
+  color: var(--theme-color);
+  transform: scale(1.2);
+}
+
 .contact .info-box .social-links a i.bi {
   font-size: 16px;
   transition: color 0.3s, transform 0.3s;
+}
+
+.contact .info-box .social-links a:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.contact .info-box .social-links a:hover i.bi {
+  animation: bounce 0.6s;
 }
 
 .contact .info-box .social-links a.twitter:hover i.bi {
@@ -119,23 +145,6 @@
   color: white;
 }
 
-.contact .info-box .social-links {
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.contact .info-box .social-links a {
-  font-size: 16px;
-  color: white;
-  line-height: 1;
-  margin-right: 8px;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.contact .info-box .social-links a:hover {
-  color: var(--theme-color);
-  transform: scale(1.2);
-}
 
 .contact .php-email-form {
   flex: 1;
@@ -206,7 +215,7 @@
 .contact .php-email-form textarea:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: var(--theme-color);
-  transform: scale(1.01);
+  transform: scale(1.02);
   box-shadow: 0 0 8px var(--theme-color);
 }
 
@@ -241,24 +250,35 @@
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--theme-shadow-color);
+  transform: scale(1.05);
   animation: pulse 1s infinite;
 }
 
-.map-container {
+.contact .map-container {
   flex: 1;
   overflow: hidden;
   height: 380px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
-.map-container:hover {
+.contact .map-container:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.6s ease-in, 0.5s ease-out;
 }
 
+.contact .map-container iframe {
+  transition: opacity 0.6s ease-in-out;
+}
+
 @media (max-width: 768px) {
-  .map-container {
+  .contact .contact-top-row {
+    flex-direction: column;
+  }
+
+  .contact .map-container {
     height: 300px;
   }
 }
@@ -306,11 +326,8 @@
   }
 }
 
-.social-links a:hover i.bi{
-  animation: bounce 0.6s;
-}
 
-.php-email-form button[type=submit]:after {
+.contact .php-email-form button[type=submit]:after {
   content: "";
   position: absolute;
   width: 300%;
@@ -322,6 +339,6 @@
   transition: transform 0.5s ease;
 }
 
-.php-email-form button[type=submit]:active:after {
+.contact .php-email-form button[type=submit]:active:after {
   transform: translate(-50%, -50%) scale(1);
 }
