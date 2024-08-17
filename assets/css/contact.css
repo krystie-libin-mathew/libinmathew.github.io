@@ -4,9 +4,9 @@
 
 .contact .contact-top-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .contact .map-container {
@@ -21,7 +21,6 @@
 .contact .map-container:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: transform 0.6s ease-in, 0.5s ease-out;
 }
 
 .contact .map-container iframe {
@@ -31,11 +30,12 @@
 
 .contact .php-email-form {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   height: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
   transition: background 0.3s, box-shadow 0.3s;
 }
 
@@ -89,9 +89,9 @@
   font-size: 14px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: background 0.3s, border-color 0.3s;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .contact .php-email-form input:focus,
@@ -100,6 +100,7 @@
   border-color: var(--theme-color);
   transform: scale(1.02);
   box-shadow: 0 0 8px var(--theme-color);
+  transform: scale(1.02);
 }
 
 .contact .php-email-form input::-moz-placeholder,
@@ -123,11 +124,12 @@
 }
 
 .contact .php-email-form button[type=submit] {
+  align-self: flex-start;
   background: var(--theme-color);
   border: 0;
-  padding: 10px 30px;
+  padding: 10px 20px;
   color: white;
-  transition: background 0.4s, transform 0.3s;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
   border-radius: 5px;
 }
 
@@ -236,7 +238,7 @@
   color: white;
   line-height: 1;
   margin-right: 8px;
-  transition: color 0.3s, transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .contact .info-box .social-links a:hover {
@@ -292,10 +294,31 @@
 @media (max-width: 768px) {
   .contact .contact-top-row {
     flex-direction: column;
+    gap: 10px;
   }
 
   .contact .map-container {
-    height: 300px;
+    height: 250px;
+    width: 100%;
+  }
+
+  .contact .php-email-form {
+    width: 100%;
+  }
+
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact .php-email-form button[type=submit] {
+    align-self: center;
+    width: 100%;
+  }
+
+  .contact .info-boxes {
+    grid-template-columns: 1fr;
   }
 }
 
