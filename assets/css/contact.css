@@ -15,12 +15,12 @@
   height: 380px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
 .contact .map-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
 }
 
 .contact .php-email-form {
@@ -31,10 +31,10 @@
   background: rgba(255, 255, 255, 0.1);
   height: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .contact .php-email-form:hover {
+  transform: scale(1.02);
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -53,6 +53,7 @@
 .contact .php-email-form .error-message {
   background: #ed3c0d;
   color: white;
+  animation: shake 0.3s;
 }
 
 .contact .php-email-form .sent-message {
@@ -72,9 +73,9 @@
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--theme-color);
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+  border: 2px solid var(--theme-color);
+  border-top-color: transparent;
+  animation: animate-loading 0.8s linear infinite;
 }
 
 .contact .php-email-form input,
@@ -95,6 +96,8 @@
   border-color: var(--theme-color);
   box-shadow: 0 0 8px var(--theme-color);
   transform: scale(1.02);
+  outline: 2px solid var(--theme-color);
+  outline-offset: 2px;
 }
 
 .contact .php-email-form input::-moz-placeholder,
@@ -105,22 +108,19 @@
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  opacity: 1;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
+.contact .php-email-form input,
 .contact .php-email-form textarea {
-  padding: 12px 15px;
+  padding: 10px 15px;
 }
 
 .contact .php-email-form button[type=submit] {
   align-self: flex-start;
   background: var(--theme-color);
   border: none;
+  width: 100%;
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
@@ -130,7 +130,7 @@
 .contact .php-email-form button[type=submit]:hover {
   background: var(--theme-shadow-color);
   transform: scale(1.05);
-  animation: pulse 1s infinite;
+  animation: pulse 1s infinite alternate;
 }
 
 .contact .php-email-form button[type=submit]:after {
@@ -167,8 +167,8 @@
 .contact .info-box:hover {
   background: var(--theme-color);
   color: white;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px) scale(1.03);
 }
 
 .contact .info-box i.bi {
@@ -238,9 +238,9 @@
   transition: color 0.3s, transform 0.3s;
 }
 
-
 .contact .info-box .social-links a:hover i.bi {
   animation: bounce 0.6s infinite;
+  animation-delay: 0.1s;
 }
 
 .contact .info-box .social-links a.twitter:hover i.bi {
@@ -275,16 +275,43 @@
   background: #0088CC;
 }
 
+.contact .php-email-form input:hover,
+.contact .php-email-form textarea:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.contact .php-email-form button[type=submit]:focus {
+  outline: 2px solid var(--theme-color);
+  outline-offset: 2px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea,
+.contact .php-email-form button[type=submit],
+.contact .info-box {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info-box,
+.contact .php-email-form,
+.contact .map-container {
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 1024px) {
+  .contact .php-email-form button[type=submit] {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1024px) {
   .contact .map-container {
     height: 380px;
     width: 100%;
   }
 
-  .contact .php-email-form {
-    width: 100%;
-  }
-
+  .contact .php-email-form,
   .contact .php-email-form input,
   .contact .php-email-form textarea {
     width: 100%;
@@ -323,7 +350,6 @@
     flex-direction: column;
     gap: 10px;
   }
-
 
   .contact .map-container,
   .contact .php-email-form {
@@ -379,10 +405,27 @@
   }
 
   40% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
   }
 }
