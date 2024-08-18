@@ -15,6 +15,7 @@
   height: 380px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .contact .map-container:hover,
@@ -83,7 +84,6 @@
   font-size: 14px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   color: white;
   margin-bottom: 10px;
 }
@@ -94,8 +94,6 @@
   border-color: var(--theme-color);
   box-shadow: 0 0 8px var(--theme-color);
   transform: scale(1.02);
-  outline: 2px solid var(--theme-color);
-  outline-offset: 2px;
 }
 
 .contact .php-email-form input::placeholder,
@@ -270,72 +268,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .contact .map-container {
-    height: 380px;
-    width: 100%;
-  }
-
-  .contact .php-email-form,
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 768px) {
-  .contact .contact-top-row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact .map-container,
-  .contact .php-email-form {
-    width: 100%;
-  }
-
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .contact .php-email-form button[type=submit] {
-    align-self: center;
-    width: 80%;
-  }
-
-  .contact .info-boxes {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .contact .contact-top-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .contact .map-container,
-  .contact .php-email-form {
-    width: 100%;
-  }
-
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .contact .php-email-form button[type=submit] {
-    align-self: center;
-    width: 100%;
-  }
-
-  .contact .info-boxes {
-    grid-template-columns: 1fr;
-  }
-}
 
 @keyframes animate-loading {
   0% {
