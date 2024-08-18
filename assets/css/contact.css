@@ -12,7 +12,7 @@
 .contact .map-container,
 .contact .php-email-form {
   flex: 1;
-  height: 380px;
+  height: 360px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -115,7 +115,6 @@
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--theme-shadow-color);
-  transform: scale(1.05);
   animation: pulse 1s infinite alternate;
 }
 
@@ -165,7 +164,7 @@
 }
 
 .contact .info-box h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   margin: 10px 0;
@@ -287,7 +286,7 @@
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 }
 
