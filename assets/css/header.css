@@ -314,7 +314,8 @@ header#topbar {
 #header.header-top .social-links,
 #header.header-top .color-mode,
 #header.header-top .education-intro,
-#header.header-top .welcome-text {
+#header.header-top .welcome-text,
+#header.header-top .scroll-down {
     display: none;
 }
 
