@@ -12,7 +12,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:  flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 0 50px;
     flex-grow: 1;
@@ -350,13 +350,11 @@ header#topbar {
 }
 
 #header .social-links {
+    padding: 0;
     position: fixed;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     z-index: 2;
 }
 
@@ -370,37 +368,39 @@ header#topbar {
     background: rgba(255, 255, 255, 0.1);
     color: white;
     line-height: 1;
-    margin-right: 8px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    margin-bottom: 1px;
+    width: 50px;
+    height: 50px;
 }
 
-#header .social-links a:hover {
-    transform: translateY(-5px);
-}
 
-#header .social-links a.twitter {
+#header .social-links a.twitter:hover {
+    color: white;
     background: #1da1f2;
 }
 
-#header .social-links a.linkedin {
+#header .social-links a.linkedin:hover {
+    color: white;
     background: #0077b5;
 }
 
-#header .social-links a.google-plus {
+#header .social-links a.google-plus:hover {
+    color: white;
     background: #db4437;
 }
 
-#header .social-links a.youtube {
+#header .social-links a.youtube:hover {
+    color: white;
     background: #ff0000;
 }
 
-#header .social-links a.github {
+#header .social-links a.github:hover {
+    color: white;
     background: #333;
 }
 
-#header .social-links a.whatsapp {
+#header .social-links a.whatsapp:hover {
+    color: white;
     background: #25d366;
 }
 
