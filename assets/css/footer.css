@@ -6,12 +6,12 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: rgba(var(--theme-color-rgb), 0.9); 
+  background: rgba(var(--theme-color-rgb), 0.9);
   z-index: 999999;
 }
 
 #footer .credits {
-  padding: 5px;
+  padding: 5px 0;
   text-align: right;
   font-size: 14px;
   color: white;
