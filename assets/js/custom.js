@@ -1,6 +1,30 @@
 (function () {
     "use strict";
 
+    // COLOR MODE
+    document.addEventListener('DOMContentLoaded', function () {
+        const colorModeSwitch = document.getElementById('colorModeSwitch');
+        const toggleIcon = document.getElementById('toggleIcon');
+
+        colorModeSwitch.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const body = document.body;
+
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                toggleIcon.classList.remove('bi-moon');
+                toggleIcon.classList.add('bi-sun');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                toggleIcon.classList.remove('bi-sun');
+                toggleIcon.classList.add('bi-moon');
+            }
+        });
+    });
+
     /**
     * 3D Box rotatation and reset helper function
     */
@@ -28,11 +52,9 @@
 
         // Change the top bar background when palette is shown
         if (themePalette.classList.contains('show')) {
-            topBar.style.backgroundColor = 'white'; // Show background color when visible
             icon.classList.remove('bi-palette');
             icon.classList.add('bi-palette-fill');
         } else {
-            topBar.style.backgroundColor = 'transparent'; // Hide background color when hidden
             icon.classList.remove('bi-palette-fill');
             icon.classList.add('bi-palette');
         }

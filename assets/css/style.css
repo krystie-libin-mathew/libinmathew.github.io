@@ -105,3 +105,13 @@ section .container {
   text-transform: uppercase;
   color: white;
 }
+
+.section-title p::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background: rgba(var(--theme-color-rgb), 0.4);
+}
