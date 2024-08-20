@@ -546,7 +546,6 @@ header#topbar {
     z-index: 1000;
     padding: 8px 0;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 8px;
