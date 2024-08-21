@@ -75,33 +75,44 @@ header#topbar {
     background-color: var(--theme-blue);
 }
 
-#topbar .theme-button[data-theme="pink"] {
-    background-color: var(--theme-pink);
-}
-
-#topbar .theme-button[data-theme="green"] {
-    background-color: var(--theme-green);
-}
-
-#topbar .theme-button[data-theme="red"] {
-    background-color: var(--theme-red);
-}
-
-#topbar .theme-button[data-theme="yellow"] {
-    background-color: var(--theme-yellow);
+#topbar .theme-button[data-theme="indigo"] {
+    background-color: var(--theme-indigo);
 }
 
 #topbar .theme-button[data-theme="purple"] {
     background-color: var(--theme-purple);
 }
 
-#topbar .theme-button[data-theme="brown"] {
-    background-color: var(--theme-brown);
+#topbar .theme-button[data-theme="pink"] {
+    background-color: var(--theme-pink);
 }
 
+#topbar .theme-button[data-theme="red"] {
+    background-color: var(--theme-red);
+}
+
+#topbar .theme-button[data-theme="orange"] {
+    background-color: var(--theme-orange);
+}
+
+#topbar .theme-button[data-theme="yellow"] {
+    background-color: var(--theme-yellow);
+}
+
+#topbar .theme-button[data-theme="green"] {
+    background-color: var(--theme-green);
+}
+
+#topbar .theme-button[data-theme="teal"] {
+    background-color: var(--theme-teal);
+}
 
 #topbar .theme-button[data-theme="cyan"] {
     background-color: var(--theme-cyan);
+}
+
+#topbar .theme-button[data-theme="brown"] {
+    background-color: var(--theme-brown);
 }
 
 #topbar #toggle-palette {
