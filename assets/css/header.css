@@ -111,8 +111,44 @@ header#topbar {
     background-color: var(--theme-bootstrap-cyan);
 }
 
-#topbar .theme-button[data-theme="bootstrap-brown"] {
-    background-color: var(--theme-bootstrap-brown);
+#topbar .theme-button[data-theme="tailwind-rose"] {
+    background-color: var(--theme-tailwind-rose);
+}
+
+#topbar .theme-button[data-theme="tailwind-fuchsia"] {
+    background-color: var(--theme-tailwind-fuchsia);
+}
+
+#topbar .theme-button[data-theme="tailwind-sky"] {
+    background-color: var(--theme-tailwind-sky);
+}
+
+#topbar .theme-button[data-theme="tailwind-emerald"] {
+    background-color: var(--theme-tailwind-emerald);
+}
+
+#topbar .theme-button[data-theme="tailwind-lime"] {
+    background-color: var(--theme-tailwind-lime);
+}
+
+#topbar .theme-button[data-theme="tailwind-amber"] {
+    background-color: var(--theme-tailwind-amber);
+}
+
+#topbar .theme-button[data-theme="material-lightGreen"] {
+    background-color: var(--theme-material-lightGreen);
+}
+
+#topbar .theme-button[data-theme="material-deepOrange"] {
+    background-color: var(--theme-material-deepOrange);
+}
+
+#topbar .theme-button[data-theme="material-darkBrown"] {
+    background-color: var(--theme-material-darkBrown);
+}
+
+#topbar .theme-button[data-theme="material-lightBrown"] {
+    background-color: var(--theme-material-lightBrown);
 }
 
 #topbar #toggle-palette {

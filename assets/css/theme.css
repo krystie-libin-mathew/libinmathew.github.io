@@ -49,10 +49,55 @@
     --theme-bootstrap-cyan-shadow: #087990;
     --theme-bootstrap-cyan: #0DCAF0;
 
-    --theme-bootstrap-brown-line: #BFA98A;
-    --theme-bootstrap-brown-rgb: 184, 160, 126;
-    --theme-bootstrap-brown-shadow: #A59071;
-    --theme-bootstrap-brown: #B8A07E;
+    --theme-tailwind-rose-line: #fda4af;
+    --theme-tailwind-rose-rgb: 244, 63, 94;
+    --theme-tailwind-rose-shadow: #be123c;
+    --theme-tailwind-rose: #f43f5e;
+
+    --theme-tailwind-fuchsia-line: #f0abfc;
+    --theme-tailwind-fuchsia-rgb: 217, 70, 239;
+    --theme-tailwind-fuchsia-shadow: #a21caf;
+    --theme-tailwind-fuchsia: #d946ef;
+
+    --theme-tailwind-sky-line: #7dd3fc;
+    --theme-tailwind-sky-rgb: 14, 164, 233;
+    --theme-tailwind-sky-shadow: #0369a1;
+    --theme-tailwind-sky: #0ea5e9;
+
+    --theme-tailwind-emerald-line: #6ee7b7;
+    --theme-tailwind-emerald-rgb: 16, 185, 129;
+    --theme-tailwind-emerald-shadow: #047857;
+    --theme-tailwind-emerald: #10b981;
+
+    --theme-tailwind-lime-line: #bef264;
+    --theme-tailwind-lime-rgb: 132, 204, 22;
+    --theme-tailwind-lime-shadow: #4d7c0f;
+    --theme-tailwind-lime: #84cc16;
+
+    --theme-tailwind-amber-line: #fcd34d;
+    --theme-tailwind-amber-rgb: 245, 159, 11;
+    --theme-tailwind-amber-shadow: #b45309;
+    --theme-tailwind-amber: #f59e0b;
+
+    --theme-material-lightGreen-line: #AED581;
+    --theme-material-lightGreen-rgb: 132, 204, 22;
+    --theme-material-lightGreen-shadow: #689F38;
+    --theme-material-lightGreen: #8BC34A;
+
+    --theme-material-deepOrange-line: #fcd34d;
+    --theme-material-deepOrange-rgb: 245, 159, 11;
+    --theme-material-deepOrange-shadow: #b45309;
+    --theme-material-deepOrange: #f59e0b;
+
+    --theme-material-darkBrown-line: #A1887F;
+    --theme-material-darkBrown-rgb: 184, 160, 126;
+    --theme-material-darkBrown-shadow: #5D4037;
+    --theme-material-darkBrown: #795548;
+
+    --theme-material-lightBrown-line: #BFA98A;
+    --theme-material-lightBrown-rgb: 184, 160, 126;
+    --theme-material-lightBrown-shadow: #A59071;
+    --theme-material-lightBrown: #B8A07E;
 }
 
 [data-theme="bootstrap-blue"] {
@@ -125,9 +170,72 @@
     --theme-shadow-color: var(--theme-bootstrap-cyan-shadow);
 }
 
-[data-theme="bootstrap-brown"] {
-    --theme-color-rgb: var(--theme-bootstrap-brown-rgb);
-    --theme-color: var(--theme-bootstrap-brown);
-    --theme-line-color: var(--theme-bootstrap-brown-line);
-    --theme-shadow-color: var(--theme-bootstrap-brown-shadow);
+[data-theme="tailwind-rose"] {
+    --theme-color-rgb: var(--theme-tailwind-rose-rgb);
+    --theme-color: var(--theme-tailwind-rose);
+    --theme-line-color: var(--theme-tailwind-rose-line);
+    --theme-shadow-color: var(--theme-tailwind-rose-shadow);
+}
+
+[data-theme="tailwind-fuchsia"] {
+    --theme-color-rgb: var(--theme-tailwind-fuchsia-rgb);
+    --theme-color: var(--theme-tailwind-fuchsia);
+    --theme-line-color: var(--theme-tailwind-fuchsia-line);
+    --theme-shadow-color: var(--theme-tailwind-fuchsia-shadow);
+}
+
+[data-theme="tailwind-sky"] {
+    --theme-color-rgb: var(--theme-tailwind-sky-rgb);
+    --theme-color: var(--theme-tailwind-sky);
+    --theme-line-color: var(--theme-tailwind-sky-line);
+    --theme-shadow-color: var(--theme-tailwind-sky-shadow);
+}
+
+[data-theme="tailwind-emerald"] {
+    --theme-color-rgb: var(--theme-tailwind-emerald-rgb);
+    --theme-color: var(--theme-tailwind-emerald);
+    --theme-line-color: var(--theme-tailwind-emerald-line);
+    --theme-shadow-color: var(--theme-tailwind-emerald-shadow);
+}
+
+[data-theme="tailwind-lime"] {
+    --theme-color-rgb: var(--theme-tailwind-lime-rgb);
+    --theme-color: var(--theme-tailwind-lime);
+    --theme-line-color: var(--theme-tailwind-lime-line);
+    --theme-shadow-color: var(--theme-tailwind-lime-shadow);
+}
+
+[data-theme="tailwind-amber"] {
+    --theme-color-rgb: var(--theme-tailwind-amber-rgb);
+    --theme-color: var(--theme-tailwind-amber);
+    --theme-line-color: var(--theme-tailwind-amber-line);
+    --theme-shadow-color: var(--theme-tailwind-amber-shadow);
+}
+
+[data-theme="material-lightGreen"] {
+    --theme-color-rgb: var(--theme-material-lightGreen-rgb);
+    --theme-color: var(--theme-material-lightGreen);
+    --theme-line-color: var(--theme-material-lightGreen-line);
+    --theme-shadow-color: var(--theme-material-lightGreen-shadow);
+}
+
+[data-theme="material-deepOrange"] {
+    --theme-color-rgb: var(--theme-material-deepOrange-rgb);
+    --theme-color: var(--theme-material-deepOrange);
+    --theme-line-color: var(--theme-material-deepOrange-line);
+    --theme-shadow-color: var(--theme-material-deepOrange-shadow);
+}
+
+[data-theme="material-darkBrown"] {
+    --theme-color-rgb: var(--theme-material-darkBrown-rgb);
+    --theme-color: var(--theme-material-darkBrown);
+    --theme-line-color: var(--theme-material-darkBrown-line);
+    --theme-shadow-color: var(--theme-material-darkBrown-shadow);
+}
+
+[data-theme="material-lightBrown"] {
+    --theme-color-rgb: var(--theme-material-lightBrown-rgb);
+    --theme-color: var(--theme-material-lightBrown);
+    --theme-line-color: var(--theme-material-lightBrown-line);
+    --theme-shadow-color: var(--theme-material-lightBrown-shadow);
 }
