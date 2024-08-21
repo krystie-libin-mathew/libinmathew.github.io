@@ -71,48 +71,48 @@ header#topbar {
     }
 }
 
-#topbar .theme-button[data-theme="blue"] {
-    background-color: var(--theme-blue);
+#topbar .theme-button[data-theme="bootstrap-blue"] {
+    background-color: var(--theme-bootstrap-blue);
 }
 
-#topbar .theme-button[data-theme="indigo"] {
-    background-color: var(--theme-indigo);
+#topbar .theme-button[data-theme="bootstrap-indigo"] {
+    background-color: var(--theme-bootstrap-indigo);
 }
 
-#topbar .theme-button[data-theme="purple"] {
-    background-color: var(--theme-purple);
+#topbar .theme-button[data-theme="bootstrap-purple"] {
+    background-color: var(--theme-bootstrap-purple);
 }
 
-#topbar .theme-button[data-theme="pink"] {
-    background-color: var(--theme-pink);
+#topbar .theme-button[data-theme="bootstrap-pink"] {
+    background-color: var(--theme-bootstrap-pink);
 }
 
-#topbar .theme-button[data-theme="red"] {
-    background-color: var(--theme-red);
+#topbar .theme-button[data-theme="bootstrap-red"] {
+    background-color: var(--theme-bootstrap-red);
 }
 
-#topbar .theme-button[data-theme="orange"] {
-    background-color: var(--theme-orange);
+#topbar .theme-button[data-theme="bootstrap-orange"] {
+    background-color: var(--theme-bootstrap-orange);
 }
 
-#topbar .theme-button[data-theme="yellow"] {
-    background-color: var(--theme-yellow);
+#topbar .theme-button[data-theme="bootstrap-yellow"] {
+    background-color: var(--theme-bootstrap-yellow);
 }
 
-#topbar .theme-button[data-theme="green"] {
-    background-color: var(--theme-green);
+#topbar .theme-button[data-theme="bootstrap-green"] {
+    background-color: var(--theme-bootstrap-green);
 }
 
-#topbar .theme-button[data-theme="teal"] {
-    background-color: var(--theme-teal);
+#topbar .theme-button[data-theme="bootstrap-teal"] {
+    background-color: var(--theme-bootstrap-teal);
 }
 
-#topbar .theme-button[data-theme="cyan"] {
-    background-color: var(--theme-cyan);
+#topbar .theme-button[data-theme="bootstrap-cyan"] {
+    background-color: var(--theme-bootstrap-cyan);
 }
 
-#topbar .theme-button[data-theme="brown"] {
-    background-color: var(--theme-brown);
+#topbar .theme-button[data-theme="bootstrap-brown"] {
+    background-color: var(--theme-bootstrap-brown);
 }
 
 #topbar #toggle-palette {
