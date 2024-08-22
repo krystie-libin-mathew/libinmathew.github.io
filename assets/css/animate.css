@@ -2,8 +2,12 @@
 
 .animated {
   -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
@@ -14,6 +18,8 @@
 
 .animated.hinge {
   -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   animation-duration: 2s;
 }
 
@@ -27,6 +33,34 @@
 .animated.flipOutY {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
+}
+
+.animated-fast {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.lightSpeedIn {
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s
+}
+
+.animated.lightSpeedOut {
+  -webkit-animation-duration: .25s;
+  -moz-animation-duration: .25s;
+  -o-animation-duration: .25s;
+  animation-duration: .25s
+}
+
+.animated.wiggle {
+  -webkit-animation-duration: .75s;
+  -moz-animation-duration: .75s;
+  -o-animation-duration: .75s;
+  animation-duration: .75s
 }
 
 @-webkit-keyframes bounce {
@@ -1872,6 +1906,7 @@
 
 .animated.flip {
   -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
   animation-name: flip;

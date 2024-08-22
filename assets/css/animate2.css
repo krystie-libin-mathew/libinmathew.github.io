@@ -1,30 +1,5 @@
 @charset "UTF-8";
 
-body {
-    -webkit-backface-visibility: hidden
-}
-
-.animate {
-    opacity: 0
-}
-
-.animated {
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-
-.animated.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s
-}
 
 @-webkit-keyframes flash {
 
@@ -3865,12 +3840,7 @@ body {
     animation-timing-function: ease-out
 }
 
-.animated.lightSpeedIn {
-    -webkit-animation-duration: .5s;
-    -moz-animation-duration: .5s;
-    -o-animation-duration: .5s;
-    animation-duration: .5s
-}
+
 
 @-webkit-keyframes lightSpeedOut {
     0% {
@@ -3931,12 +3901,7 @@ body {
     animation-timing-function: ease-in
 }
 
-.animated.lightSpeedOut {
-    -webkit-animation-duration: .25s;
-    -moz-animation-duration: .25s;
-    -o-animation-duration: .25s;
-    animation-duration: .25s
-}
+
 
 @-webkit-keyframes wiggle {
     0% {
@@ -4131,13 +4096,6 @@ body {
     -moz-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in
-}
-
-.animated.wiggle {
-    -webkit-animation-duration: .75s;
-    -moz-animation-duration: .75s;
-    -o-animation-duration: .75s;
-    animation-duration: .75s
 }
 
 @-webkit-keyframes zoomIn {
