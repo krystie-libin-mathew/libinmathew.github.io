@@ -1476,8 +1476,8 @@
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
 
   to {
@@ -1490,8 +1490,8 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
 
   to {
@@ -1571,8 +1571,8 @@
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
 }
 
@@ -1583,8 +1583,8 @@
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
 }
 
@@ -2670,6 +2670,8 @@
   animation-name: hinge;
 }
 
+
+
 @-webkit-keyframes rollIn {
   from {
     opacity: 0;
@@ -2702,6 +2704,8 @@
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
+
+
 
 @-webkit-keyframes rollOut {
   from {
