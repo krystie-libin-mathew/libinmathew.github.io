@@ -2670,8 +2670,6 @@
   animation-name: hinge;
 }
 
-
-
 @-webkit-keyframes rollIn {
   from {
     opacity: 0;
@@ -2704,8 +2702,6 @@
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
-
-
 
 @-webkit-keyframes rollOut {
   from {

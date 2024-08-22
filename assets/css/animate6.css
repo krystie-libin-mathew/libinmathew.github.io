@@ -613,7 +613,6 @@
   animation-name: fadeInDown;
 }
 
-
 @keyframes fadeInDownBig {
   0% {
     opacity: 0;
@@ -1478,6 +1477,7 @@
     transform: translateX(0);
   }
 }
+
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
