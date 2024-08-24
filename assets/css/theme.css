@@ -1,241 +1,181 @@
 :root {
     --theme-bootstrap-blue-line: #6EA8FE;
-    --theme-bootstrap-blue-rgb: 13, 110, 253;
     --theme-bootstrap-blue-shadow: #084298;
     --theme-bootstrap-blue: #0D6EFD;
 
     --theme-bootstrap-indigo-line: #A370F7;
-    --theme-bootstrap-indigo-rgb: 102, 16, 242;
     --theme-bootstrap-indigo-shadow: #3D0A91;
     --theme-bootstrap-indigo: #6610F2;
 
     --theme-bootstrap-purple-line: #A98EDA;
-    --theme-bootstrap-purple-rgb: 111, 66, 193;
     --theme-bootstrap-purple-shadow: #432874;
     --theme-bootstrap-purple: #6F42C1;
 
     --theme-bootstrap-pink-line: #E685B5;
-    --theme-bootstrap-pink-rgb: 214, 51, 132;
     --theme-bootstrap-pink-shadow: #801F4F;
     --theme-bootstrap-pink: #D63384;
 
     --theme-bootstrap-red-line: #EA868F;
-    --theme-bootstrap-red-rgb: 220, 53, 69;
     --theme-bootstrap-red-shadow: #842029;
     --theme-bootstrap-red: #DC3545;
 
     --theme-bootstrap-orange-line: #FEB272;
-    --theme-bootstrap-orange-rgb: 253, 126, 20;
     --theme-bootstrap-orange-shadow: #984C0C;
     --theme-bootstrap-orange: #FD7E14;
 
     --theme-bootstrap-yellow-line: #FFDA6A;
-    --theme-bootstrap-yellow-rgb: 255, 193, 7;
     --theme-bootstrap-yellow-shadow: #997404;
     --theme-bootstrap-yellow: #FFC107;
 
     --theme-bootstrap-green-line: #75B798;
-    --theme-bootstrap-green-rgb: 25, 135, 84;
     --theme-bootstrap-green-shadow: #0F5132;
     --theme-bootstrap-green: #198754;
 
     --theme-bootstrap-teal-line: #79DFC1;
-    --theme-bootstrap-teal-rgb: 32, 201, 151;
     --theme-bootstrap-teal-shadow: #13795B;
     --theme-bootstrap-teal: #20C997;
 
     --theme-bootstrap-cyan-line: #6EDFF6;
-    --theme-bootstrap-cyan-rgb: 13, 202, 240;
     --theme-bootstrap-cyan-shadow: #087990;
     --theme-bootstrap-cyan: #0DCAF0;
 
     --theme-tailwind-rose-line: #fda4af;
-    --theme-tailwind-rose-rgb: 244, 63, 94;
     --theme-tailwind-rose-shadow: #be123c;
     --theme-tailwind-rose: #f43f5e;
 
     --theme-tailwind-fuchsia-line: #f0abfc;
-    --theme-tailwind-fuchsia-rgb: 217, 70, 239;
     --theme-tailwind-fuchsia-shadow: #a21caf;
     --theme-tailwind-fuchsia: #d946ef;
 
     --theme-tailwind-sky-line: #7dd3fc;
-    --theme-tailwind-sky-rgb: 14, 164, 233;
     --theme-tailwind-sky-shadow: #0369a1;
     --theme-tailwind-sky: #0ea5e9;
 
     --theme-tailwind-emerald-line: #6ee7b7;
-    --theme-tailwind-emerald-rgb: 16, 185, 129;
     --theme-tailwind-emerald-shadow: #047857;
     --theme-tailwind-emerald: #10b981;
 
     --theme-tailwind-lime-line: #bef264;
-    --theme-tailwind-lime-rgb: 132, 204, 22;
     --theme-tailwind-lime-shadow: #4d7c0f;
     --theme-tailwind-lime: #84cc16;
 
     --theme-tailwind-amber-line: #fcd34d;
-    --theme-tailwind-amber-rgb: 245, 159, 11;
     --theme-tailwind-amber-shadow: #b45309;
     --theme-tailwind-amber: #f59e0b;
 
     --theme-material-lightGreen-line: #AED581;
-    --theme-material-lightGreen-rgb: 132, 204, 22;
     --theme-material-lightGreen-shadow: #689F38;
     --theme-material-lightGreen: #8BC34A;
 
     --theme-material-deepOrange-line: #fcd34d;
-    --theme-material-deepOrange-rgb: 245, 159, 11;
     --theme-material-deepOrange-shadow: #b45309;
     --theme-material-deepOrange: #f59e0b;
 
     --theme-material-darkBrown-line: #A1887F;
-    --theme-material-darkBrown-rgb: 184, 160, 126;
     --theme-material-darkBrown-shadow: #5D4037;
     --theme-material-darkBrown: #795548;
 
     --theme-material-lightBrown-line: #BFA98A;
-    --theme-material-lightBrown-rgb: 184, 160, 126;
     --theme-material-lightBrown-shadow: #A59071;
     --theme-material-lightBrown: #B8A07E;
 }
 
 [data-theme="bootstrap-blue"] {
-    --theme-color-rgb: var(--theme-bootstrap-blue-rgb);
     --theme-color: var(--theme-bootstrap-blue);
-    --theme-line-color: var(--theme-bootstrap-blue-line);
     --theme-shadow-color: var(--theme-bootstrap-blue-shadow);
 }
 
 [data-theme="bootstrap-indigo"] {
-    --theme-color-rgb: var(--theme-bootstrap-indigo-rgb);
     --theme-color: var(--theme-bootstrap-indigo);
-    --theme-line-color: var(--theme-bootstrap-indigo-line);
     --theme-shadow-color: var(--theme-bootstrap-indigo-shadow);
 }
 
 [data-theme="bootstrap-purple"] {
-    --theme-color-rgb: var(--theme-bootstrap-purple-rgb);
     --theme-color: var(--theme-bootstrap-purple);
-    --theme-line-color: var(--theme-bootstrap-purple-line);
     --theme-shadow-color: var(--theme-bootstrap-purple-shadow);
 }
 
 [data-theme="bootstrap-pink"] {
-    --theme-color-rgb: var(--theme-bootstrap-pink-rgb);
     --theme-color: var(--theme-bootstrap-pink);
-    --theme-line-color: var(--theme-bootstrap-pink-line);
     --theme-shadow-color: var(--theme-bootstrap-pink-shadow);
 }
 
 [data-theme="bootstrap-red"] {
-    --theme-color-rgb: var(--theme-bootstrap-red-rgb);
     --theme-color: var(--theme-bootstrap-red);
-    --theme-line-color: var(--theme-bootstrap-red-line);
     --theme-shadow-color: var(--theme-bootstrap-red-shadow);
 }
 
 [data-theme="bootstrap-orange"] {
-    --theme-color-rgb: var(--theme-bootstrap-orange-rgb);
     --theme-color: var(--theme-bootstrap-orange);
-    --theme-line-color: var(--theme-bootstrap-orange-line);
     --theme-shadow-color: var(--theme-bootstrap-orange-shadow);
 }
 
 [data-theme="bootstrap-yellow"] {
-    --theme-color-rgb: var(--theme-bootstrap-yellow-rgb);
     --theme-color: var(--theme-bootstrap-yellow);
-    --theme-line-color: var(--theme-bootstrap-yellow-line);
     --theme-shadow-color: var(--theme-bootstrap-yellow-shadow);
 }
 
 [data-theme="bootstrap-green"] {
-    --theme-color-rgb: var(--theme-bootstrap-green-rgb);
     --theme-color: var(--theme-bootstrap-green);
-    --theme-line-color: var(--theme-bootstrap-green-line);
     --theme-shadow-color: var(--theme-bootstrap-green-shadow);
 }
 
 [data-theme="bootstrap-teal"] {
-    --theme-color-rgb: var(--theme-bootstrap-teal-rgb);
     --theme-color: var(--theme-bootstrap-teal);
-    --theme-line-color: var(--theme-bootstrap-teal-line);
     --theme-shadow-color: var(--theme-bootstrap-teal-shadow);
 }
 
 [data-theme="bootstrap-cyan"] {
-    --theme-color-rgb: var(--theme-bootstrap-cyan-rgb);
     --theme-color: var(--theme-bootstrap-cyan);
-    --theme-line-color: var(--theme-bootstrap-cyan-line);
     --theme-shadow-color: var(--theme-bootstrap-cyan-shadow);
 }
 
 [data-theme="tailwind-rose"] {
-    --theme-color-rgb: var(--theme-tailwind-rose-rgb);
     --theme-color: var(--theme-tailwind-rose);
-    --theme-line-color: var(--theme-tailwind-rose-line);
     --theme-shadow-color: var(--theme-tailwind-rose-shadow);
 }
 
 [data-theme="tailwind-fuchsia"] {
-    --theme-color-rgb: var(--theme-tailwind-fuchsia-rgb);
     --theme-color: var(--theme-tailwind-fuchsia);
-    --theme-line-color: var(--theme-tailwind-fuchsia-line);
     --theme-shadow-color: var(--theme-tailwind-fuchsia-shadow);
 }
 
 [data-theme="tailwind-sky"] {
-    --theme-color-rgb: var(--theme-tailwind-sky-rgb);
     --theme-color: var(--theme-tailwind-sky);
-    --theme-line-color: var(--theme-tailwind-sky-line);
     --theme-shadow-color: var(--theme-tailwind-sky-shadow);
 }
 
 [data-theme="tailwind-emerald"] {
-    --theme-color-rgb: var(--theme-tailwind-emerald-rgb);
     --theme-color: var(--theme-tailwind-emerald);
-    --theme-line-color: var(--theme-tailwind-emerald-line);
     --theme-shadow-color: var(--theme-tailwind-emerald-shadow);
 }
 
 [data-theme="tailwind-lime"] {
-    --theme-color-rgb: var(--theme-tailwind-lime-rgb);
     --theme-color: var(--theme-tailwind-lime);
-    --theme-line-color: var(--theme-tailwind-lime-line);
     --theme-shadow-color: var(--theme-tailwind-lime-shadow);
 }
 
 [data-theme="tailwind-amber"] {
-    --theme-color-rgb: var(--theme-tailwind-amber-rgb);
     --theme-color: var(--theme-tailwind-amber);
-    --theme-line-color: var(--theme-tailwind-amber-line);
     --theme-shadow-color: var(--theme-tailwind-amber-shadow);
 }
 
 [data-theme="material-lightGreen"] {
-    --theme-color-rgb: var(--theme-material-lightGreen-rgb);
     --theme-color: var(--theme-material-lightGreen);
-    --theme-line-color: var(--theme-material-lightGreen-line);
     --theme-shadow-color: var(--theme-material-lightGreen-shadow);
 }
 
 [data-theme="material-deepOrange"] {
-    --theme-color-rgb: var(--theme-material-deepOrange-rgb);
     --theme-color: var(--theme-material-deepOrange);
-    --theme-line-color: var(--theme-material-deepOrange-line);
     --theme-shadow-color: var(--theme-material-deepOrange-shadow);
 }
 
 [data-theme="material-darkBrown"] {
-    --theme-color-rgb: var(--theme-material-darkBrown-rgb);
     --theme-color: var(--theme-material-darkBrown);
-    --theme-line-color: var(--theme-material-darkBrown-line);
     --theme-shadow-color: var(--theme-material-darkBrown-shadow);
 }
 
 [data-theme="material-lightBrown"] {
-    --theme-color-rgb: var(--theme-material-lightBrown-rgb);
     --theme-color: var(--theme-material-lightBrown);
-    --theme-line-color: var(--theme-material-lightBrown-line);
     --theme-shadow-color: var(--theme-material-lightBrown-shadow);
 }

@@ -6,7 +6,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: rgba(var(--theme-color-rgb), 0.9);
+  background: var(--theme-color);
+  opacity: 0.9;
   z-index: 999999;
 }
 

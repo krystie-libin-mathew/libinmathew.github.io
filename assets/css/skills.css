@@ -71,7 +71,8 @@
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 5px;
-  background: rgb(var(--theme-color-rgb), 0.1);
+  background: var(--theme-color);
+  opacity: 0.1;
   height: 20px;
   padding: 0 5px;
   text-align: center;

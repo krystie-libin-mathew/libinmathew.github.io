@@ -93,7 +93,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--theme-line-color);
+  background: var(--theme-color);
   margin: 4px 10px;
 }
 
@@ -113,5 +113,6 @@ section .container {
   width: 10px;
   margin-top: 20px;
   margin-left: 10px;
-  background: rgba(var(--theme-color-rgb), 0.4);
+  background: var(--theme-color);
+  opacity: 0.4;
 }
