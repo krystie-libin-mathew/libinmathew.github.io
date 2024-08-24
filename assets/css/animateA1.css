@@ -1170,7 +1170,6 @@
   }
 }
 
-
 @-webkit-keyframes wobble {
   0% {
     -webkit-transform: translateX(0%);
@@ -1499,7 +1498,6 @@
   }
 }
 
-
 @-webkit-keyframes bounceIn {
   0% {
     opacity: 0;
@@ -1688,7 +1686,6 @@
   }
 }
 
-
 @-webkit-keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -1791,7 +1788,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
 
 @keyframes bounceInDown {
   0% {
@@ -2462,7 +2458,6 @@
     transform: scale3d(0.3, 0.3, 0.3);
   }
 }
-
 
 @keyframes bounceOut {
   0% {
@@ -3392,7 +3387,6 @@
   animation-name: fadeInLeftBig;
 }
 
-
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -3407,7 +3401,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
 
 @-webkit-keyframes fadeInUp {
   0% {
@@ -3551,7 +3544,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
 
 @keyframes fadeInRight {
   0% {
@@ -3767,8 +3759,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-
 
 @keyframes fadeInUpBig {
   0% {
@@ -4382,7 +4372,6 @@
   }
 }
 
-
 @-webkit-keyframes fadeOutUp {
   0% {
     opacity: 1;
@@ -4577,7 +4566,6 @@
     animation-timing-function: ease-in;
   }
 }
-
 
 @-webkit-keyframes flip {
   0% {
@@ -4964,7 +4952,6 @@
   }
 }
 
-
 @-webkit-keyframes flipInY {
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
@@ -5120,7 +5107,6 @@
     opacity: 0;
   }
 }
-
 
 @-webkit-keyframes flipOutX {
   0% {
@@ -5313,7 +5299,6 @@
   -moz-animation-name: flipOutY;
   -o-backface-visibility: visible !important;
   -o-animation-name: flipOutY;
-
   animation-name: flipOutY;
 }
 
@@ -5556,7 +5541,6 @@
     transform: translateX(100%) skewX(-30deg);
     opacity: 0;
   }
-
 }
 
 .lightSpeedOut {
@@ -5651,7 +5635,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes rotateIn {
   0% {
@@ -6249,7 +6232,6 @@
   }
 }
 
-
 @-webkit-keyframes rotateOutDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
@@ -6846,7 +6828,6 @@
   }
 }
 
-
 @keyframes hinge {
   0% {
     -webkit-transform: rotate(0);
@@ -7034,7 +7015,6 @@
   }
 }
 
-
 @keyframes rollIn {
   0% {
     opacity: 0;
@@ -7142,7 +7122,6 @@
   -o-animation-name: rollOut;
   animation-name: rollOut;
 }
-
 
 @-webkit-keyframes wiggle {
   0% {
@@ -7508,7 +7487,6 @@
   }
 }
 
-
 @keyframes zoomInLeft {
   from {
     opacity: 0;
@@ -7805,7 +7783,6 @@
   }
 }
 
-
 @-webkit-keyframes zoomOutDown {
   40% {
     opacity: 1;
@@ -7919,7 +7896,6 @@
     transform-origin: left center;
   }
 }
-
 
 @keyframes zoomOutLeft {
   40% {
@@ -8042,7 +8018,6 @@
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
 }
-
 
 @-webkit-keyframes zoomOutUp {
   40% {
@@ -8477,7 +8452,6 @@
   }
 }
 
-
 @-webkit-keyframes slideOutRight {
   0% {
     -webkit-transform: translateX(0);
@@ -8503,7 +8477,6 @@
     transform: translate3d(100%, 0, 0);
   }
 }
-
 
 @keyframes slideOutRight {
   0% {
