@@ -144,7 +144,7 @@ header#topbar {
 }
 
 #topbar .theme-button[data-theme="material-darkBrown"] {
-    background-color: var(--theme-material-darkBrown);
+    background-color: var(--theme-material-brown);
 }
 
 #topbar .theme-button[data-theme="material-lightBrown"] {
