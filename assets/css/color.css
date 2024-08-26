@@ -9,10 +9,10 @@
     --material-red-700: #D32F2F;
     --material-red-800: #C62828;
     --material-red-900: #B71C1C;
-    --material-red-A100: #FF8A80;
-    --material-red-A200: #FF5252;
-    --material-red-A400: #FF1744;
-    --material-red-A700: #D50000;
+    --material-red-light-accent-100: #FF8A80;
+    --material-red-medium-light-accent-200: #FF5252;
+    --material-red-medium-accent-400: #FF1744;
+    --material-red-dark-accent-700: #D50000;
 
     --material-pink-50: #FCE4EC;
     --material-pink-100: #F8BBD0;
@@ -24,10 +24,10 @@
     --material-pink-700: #C2185B;
     --material-pink-800: #AD1457;
     --material-pink-900: #880E4F;
-    --material-pink-A100: #FF80AB;
-    --material-pink-A200: #FF4081;
-    --material-pink-A400: #F50057;
-    --material-pink-A700: #C51162;
+    --material-pink-light-accent-100: #FF80AB;
+    --material-pink-medium-light-accent-200: #FF4081;
+    --material-pink-medium-accent-400: #F50057;
+    --material-pink-dark-accent-700: #C51162;
 
     --material-purple-50: #F3E5F5;
     --material-purple-100: #E1BEE7;
@@ -39,10 +39,10 @@
     --material-purple-700: #7B1FA2;
     --material-purple-800: #6A1B9A;
     --material-purple-900: #4A148C;
-    --material-purple-A100: #EA80FC;
-    --material-purple-A200: #E040FB;
-    --material-purple-A400: #D500F9;
-    --material-purple-A700: #AA00FF;
+    --material-purple-light-accent-100: #EA80FC;
+    --material-purple-medium-light-accent-200: #E040FB;
+    --material-purple-medium-accent-400: #D500F9;
+    --material-purple-dark-accent-700: #AA00FF;
 
     --material-deep-purple-50: #EDE7F6;
     --material-deep-purple-100: #D1C4E9;
@@ -54,10 +54,10 @@
     --material-deep-purple-700: #512DA8;
     --material-deep-purple-800: #4527A0;
     --material-deep-purple-900: #311B92;
-    --material-deep-purple-A100: #B388FF;
-    --material-deep-purple-A200: #7C4DFF;
-    --material-deep-purple-A400: #651FFF;
-    --material-deep-purple-A700: #6200EA;
+    --material-deep-purple-light-accent-100: #B388FF;
+    --material-deep-purple-medium-light-accent-200: #7C4DFF;
+    --material-deep-purple-medium-accent-400: #651FFF;
+    --material-deep-purple-dark-accent-700: #6200EA;
 
     --material-indigo-50: #E8EAF6;
     --material-indigo-100: #C5CAE9;
@@ -69,10 +69,10 @@
     --material-indigo-700: #303F9F;
     --material-indigo-800: #283593;
     --material-indigo-900: #1A237E;
-    --material-indigo-A100: #8C9EFF;
-    --material-indigo-A200: #536DFE;
-    --material-indigo-A400: #3D5AFE;
-    --material-indigo-A700: #304FFE;
+    --material-indigo-light-accent-100: #8C9EFF;
+    --material-indigo-medium-light-accent-200: #536DFE;
+    --material-indigo-medium-accent-400: #3D5AFE;
+    --material-indigo-dark-accent-700: #304FFE;
 
     --material-blue-50: #E3F2FD;
     --material-blue-100: #BBDEFB;
@@ -84,10 +84,10 @@
     --material-blue-700: #1976D2;
     --material-blue-800: #1565C0;
     --material-blue-900: #0D47A1;
-    --material-blue-A100: #82B1FF;
-    --material-blue-A200: #448AFF;
-    --material-blue-A400: #2979FF;
-    --material-blue-A700: #2962FF;
+    --material-blue-light-accent-100: #82B1FF;
+    --material-blue-medium-light-accent-200: #448AFF;
+    --material-blue-medium-accent-400: #2979FF;
+    --material-blue-dark-accent-700: #2962FF;
 
     --material-light-blue-50: #E1F5FE;
     --material-light-blue-100: #B3E5FC;
@@ -99,10 +99,10 @@
     --material-light-blue-700: #0288D1;
     --material-light-blue-800: #0277BD;
     --material-light-blue-900: #01579B;
-    --material-light-blue-A100: #80D8FF;
-    --material-light-blue-A200: #40C4FF;
-    --material-light-blue-A400: #00B0FF;
-    --material-light-blue-A700: #0091EA;
+    --material-light-blue-light-accent-100: #80D8FF;
+    --material-light-blue-medium-light-accent-200: #40C4FF;
+    --material-light-blue-medium-accent-400: #00B0FF;
+    --material-light-blue-dark-accent-700: #0091EA;
 
     --material-cyan-50: #E0F7FA;
     --material-cyan-100: #B2EBF2;
@@ -114,10 +114,10 @@
     --material-cyan-700: #0097A7;
     --material-cyan-800: #00838F;
     --material-cyan-900: #006064;
-    --material-cyan-A100: #84FFFF;
-    --material-cyan-A200: #18FFFF;
-    --material-cyan-A400: #00E5FF;
-    --material-cyan-A700: #00B8D4;
+    --material-cyan-light-accent-100: #84FFFF;
+    --material-cyan-medium-light-accent-200: #18FFFF;
+    --material-cyan-medium-accent-400: #00E5FF;
+    --material-cyan-dark-accent-700: #00B8D4;
 
     --material-teal-50: #E0F2F1;
     --material-teal-100: #B2DFDB;
@@ -129,10 +129,10 @@
     --material-teal-700: #00796B;
     --material-teal-800: #00695C;
     --material-teal-900: #004D40;
-    --material-teal-A100: #A7FFEB;
-    --material-teal-A200: #64FFDA;
-    --material-teal-A400: #1DE9B6;
-    --material-teal-A700: #00BFA5;
+    --material-teal-light-accent-100: #A7FFEB;
+    --material-teal-medium-light-accent-200: #64FFDA;
+    --material-teal-medium-accent-400: #1DE9B6;
+    --material-teal-dark-accent-700: #00BFA5;
 
     --material-green-50: #E8F5E9;
     --material-green-100: #C8E6C9;
@@ -144,10 +144,10 @@
     --material-green-700: #388E3C;
     --material-green-800: #2E7D32;
     --material-green-900: #1B5E20;
-    --material-green-A100: #B9F6CA;
-    --material-green-A200: #69F0AE;
-    --material-green-A400: #00E676;
-    --material-green-A700: #00C853;
+    --material-green-light-accent-100: #B9F6CA;
+    --material-green-medium-light-accent-200: #69F0AE;
+    --material-green-medium-accent-400: #00E676;
+    --material-green-dark-accent-700: #00C853;
 
     --material-light-green-50: #F1F8E9;
     --material-light-green-100: #DCEDC8;
@@ -159,10 +159,10 @@
     --material-light-green-700: #689F38;
     --material-light-green-800: #558B2F;
     --material-light-green-900: #33691E;
-    --material-light-green-A100: #CCFF90;
-    --material-light-green-A200: #B2FF59;
-    --material-light-green-A400: #76FF03;
-    --material-light-green-A700: #64DD17;
+    --material-light-green-light-accent-100: #CCFF90;
+    --material-light-green-medium-light-accent-200: #B2FF59;
+    --material-light-green-medium-accent-400: #76FF03;
+    --material-light-green-dark-accent-700: #64DD17;
 
     --material-lime-50: #F9FBE7;
     --material-lime-100: #F0F4C3;
@@ -174,10 +174,10 @@
     --material-lime-700: #AFB42B;
     --material-lime-800: #9E9D24;
     --material-lime-900: #827717;
-    --material-lime-A100: #F4FF81;
-    --material-lime-A200: #EEFF41;
-    --material-lime-A400: #C6FF00;
-    --material-lime-A700: #AEEA00;
+    --material-lime-light-accent-100: #F4FF81;
+    --material-lime-medium-light-accent-200: #EEFF41;
+    --material-lime-medium-accent-400: #C6FF00;
+    --material-lime-dark-accent-700: #AEEA00;
 
     --material-yellow-50: #FFFDE7;
     --material-yellow-100: #FFF9C4;
@@ -189,10 +189,10 @@
     --material-yellow-700: #FBC02D;
     --material-yellow-800: #F9A825;
     --material-yellow-900: #F57F17;
-    --material-yellow-A100: #FFFF8D;
-    --material-yellow-A200: #FFFF00;
-    --material-yellow-A400: #FFEA00;
-    --material-yellow-A700: #FFD600;
+    --material-yellow-light-accent-100: #FFFF8D;
+    --material-yellow-medium-light-accent-200: #FFFF00;
+    --material-yellow-medium-accent-400: #FFEA00;
+    --material-yellow-dark-accent-700: #FFD600;
 
     --material-amber-50: #FFF8E1;
     --material-amber-100: #FFECB3;
@@ -204,10 +204,10 @@
     --material-amber-700: #FFA000;
     --material-amber-800: #FF8F00;
     --material-amber-900: #FF6F00;
-    --material-amber-A100: #FFE57F;
-    --material-amber-A200: #FFD740;
-    --material-amber-A400: #FFC400;
-    --material-amber-A700: #FFAB00;
+    --material-amber-light-accent-100: #FFE57F;
+    --material-amber-medium-light-accent-200: #FFD740;
+    --material-amber-medium-accent-400: #FFC400;
+    --material-amber-dark-accent-700: #FFAB00;
 
     --material-orange-50: #FFF3E0;
     --material-orange-100: #FFE0B2;
@@ -219,10 +219,10 @@
     --material-orange-700: #F57C00;
     --material-orange-800: #EF6C00;
     --material-orange-900: #E65100;
-    --material-orange-A100: #FFD180;
-    --material-orange-A200: #FFAB40;
-    --material-orange-A400: #FF9100;
-    --material-orange-A700: #FF6D00;
+    --material-orange-light-accent-100: #FFD180;
+    --material-orange-medium-light-accent-200: #FFAB40;
+    --material-orange-medium-accent-400: #FF9100;
+    --material-orange-dark-accent-700: #FF6D00;
 
     --material-deep-orange-50: #FBE9E7;
     --material-deep-orange-100: #FFCCBC;
@@ -234,10 +234,10 @@
     --material-deep-orange-700: #E64A19;
     --material-deep-orange-800: #D84315;
     --material-deep-orange-900: #BF360C;
-    --material-deep-orange-A100: #FF9E80;
-    --material-deep-orange-A200: #FF6E40;
-    --material-deep-orange-A400: #FF3D00;
-    --material-deep-orange-A700: #DD2C00;
+    --material-deep-orange-light-accent-100: #FF9E80;
+    --material-deep-orange-medium-light-accent-200: #FF6E40;
+    --material-deep-orange-medium-accent-400: #FF3D00;
+    --material-deep-orange-dark-accent-700: #DD2C00;
 
     --material-brown-50: #EFEBE9;
     --material-brown-100: #D7CCC8;
