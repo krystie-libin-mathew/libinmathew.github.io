@@ -36,11 +36,6 @@
   font-size: 16px;
   margin-right: 5px;
   color: var(--theme-color);
-  line-height: 0;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
 }
 
 .about .social-aria {
@@ -48,7 +43,6 @@
   bottom: 0;
   text-align: center;
   width: 100%;
-  z-index: 1;
   padding: 15px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
@@ -68,7 +62,6 @@
 
 .about .social-aria a:hover {
   transform: scale(1.1);
-  border-radius: 50%;
 }
 
 .about .social-aria a.twitter:hover {
