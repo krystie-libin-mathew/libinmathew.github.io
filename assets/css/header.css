@@ -8,7 +8,7 @@ header {
     z-index: 10;
 }
 
-.header-content {
+#hero .header-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -179,7 +179,7 @@ header#topbar {
     animation: fadeInLeft 0.9s ease-out;
 }
 
-.hide-topbar header#header.header-top {
+.hide-topbar header#hero.header-top {
     top: 0;
     margin-top: 0;
 }
@@ -212,7 +212,7 @@ header#topbar {
     }
 }
 
-#header h4.welcome-text {
+#hero h4.welcome-text {
     color: var(--theme-color);
     text-transform: uppercase;
     font-size: 1.2em;
@@ -224,7 +224,7 @@ header#topbar {
     padding: 0 0 0 20px;
 }
 
-#header h2.greeting {
+#hero h2.greeting {
     font-size: 1.8em;
     font-weight: 400;
     margin: 10px 0;
@@ -233,7 +233,7 @@ header#topbar {
     padding: 0 0 0 20px;
 }
 
-#header h1.name {
+#hero h1.name {
     font-size: 2em;
     font-weight: 700;
     margin: 10px 0;
@@ -243,17 +243,17 @@ header#topbar {
     padding: 0 0 0 20px;
 }
 
-#header h1.name a {
+#hero h1.name a {
     color: var(--theme-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
-#header h1.name a:hover {
+#hero h1.name a:hover {
     color: var(--theme-color);
 }
 
-#header h2.role {
+#hero h2.role {
     font-size: 1.5em;
     font-weight: 500;
     margin: 10px 0;
@@ -262,12 +262,12 @@ header#topbar {
     padding: 0 0 0 20px;
 }
 
-#header .typed {
+#hero .typed {
     color: var(--theme-color);
     font-weight: 500;
 }
 
-#header .education-intro p {
+#hero .education-intro p {
     font-size: 1.1em;
     font-weight: 300;
     margin: 20px 0;
@@ -279,7 +279,7 @@ header#topbar {
     padding: 0 0 0 20px;
 }
 
-#header {
+#hero {
     transition: ease-in-out 0.3s;
     position: relative;
     height: 100vh;
@@ -292,7 +292,7 @@ header#topbar {
 }
 
 
-#header h1 {
+#hero h1 {
     font-size: 48px;
     margin: 0;
     padding: 0;
@@ -300,53 +300,53 @@ header#topbar {
     font-weight: 700;
 }
 
-#header h1 a,
-#header h1 a:hover {
+#hero h1 a,
+#hero h1 a:hover {
     color: var(--theme-color);
     line-height: 1;
     display: inline-block;
 }
 
-#header h2 {
+#hero h2 {
     font-size: 24px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.8);
 }
 
-#header h2 span {
+#hero h2 span {
     color: white;
     border-bottom: 2px dashed var(--theme-color);
     padding-bottom: 6px;
 }
 
-#header img {
+#hero img {
     padding: 0;
     margin: 0;
 }
 
 @media (max-width: 992px) {
-    #header h1 {
+    #hero h1 {
         font-size: 36px;
     }
 
-    #header h2 {
+    #hero h2 {
         font-size: 20px;
         line-height: 30px;
     }
 
-    #header .social-links {
+    #hero .social-links {
         margin-top: 15px;
     }
 
-    #header .header-content {
+    #hero .header-content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
 
-/* Header Top */
-#header.header-top {
+/* Hero Top */
+#hero.header-top {
     height: 80px;
     position: fixed;
     left: 0;
@@ -357,46 +357,46 @@ header#topbar {
     margin-top: 0;
 }
 
-#header.header-top h2,
-#header.header-top .social-links,
-#header.header-top .color-mode,
-#header.header-top .education-intro,
-#header.header-top .welcome-text,
-#header.header-top .scroll-down {
+#hero.header-top h2,
+#hero.header-top .social-links,
+#hero.header-top .color-mode,
+#hero.header-top .education-intro,
+#hero.header-top .welcome-text,
+#hero.header-top .scroll-down {
     display: none;
 }
 
-#header.header-top h1 {
+#hero.header-top h1 {
     margin-right: auto;
     font-size: 36px;
 }
 
-#header.header-top img {
+#hero.header-top img {
     max-height: 60px;
     margin-right: 20px !important;
 }
 
-#header.header-top .header-content {
+#hero.header-top .header-content {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-#header.header-top .navbar {
+#hero.header-top .navbar {
     margin: 0;
 }
 
 @media (max-width: 768px) {
-    #header.header-top {
+    #hero.header-top {
         height: 60px;
     }
 
-    #header.header-top h1 {
+    #hero.header-top h1 {
         font-size: 26px;
     }
 }
 
-#header .social-links {
+#hero .social-links {
     padding: 0;
     position: fixed;
     top: 50%;
@@ -405,7 +405,7 @@ header#topbar {
     z-index: 2;
 }
 
-#header .social-links a {
+#hero .social-links a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 16px;
@@ -421,37 +421,37 @@ header#topbar {
 }
 
 
-#header .social-links a.twitter:hover {
+#hero .social-links a.twitter:hover {
     color: white;
     background: #1da1f2;
 }
 
-#header .social-links a.linkedin:hover {
+#hero .social-links a.linkedin:hover {
     color: white;
     background: #0077b5;
 }
 
-#header .social-links a.google-plus:hover {
+#hero .social-links a.google-plus:hover {
     color: white;
     background: #db4437;
 }
 
-#header .social-links a.youtube:hover {
+#hero .social-links a.youtube:hover {
     color: white;
     background: #ff0000;
 }
 
-#header .social-links a.github:hover {
+#hero .social-links a.github:hover {
     color: white;
     background: #333;
 }
 
-#header .social-links a.whatsapp:hover {
+#hero .social-links a.whatsapp:hover {
     color: white;
     background: #25d366;
 }
 
-#header .resume-button {
+#hero .resume-button {
     display: flex;
     justify-content: left;
     gap: 20px;
