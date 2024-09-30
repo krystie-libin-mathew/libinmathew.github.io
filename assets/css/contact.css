@@ -102,14 +102,12 @@
 }
 
 .contact .php-email-form button[type=submit] {
-  align-self: flex-start;
   background: var(--theme-color);
   border: none;
-  width: 100%;
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: 0.3s;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -167,7 +165,6 @@
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   margin: 10px 0;
-  transition: color 0.3s;
 }
 
 .contact .info-box p {
@@ -175,7 +172,6 @@
   line-height: 24px;
   font-size: 14px;
   margin: 0;
-  transition: color 0.3s;
 }
 
 .contact .info-box:hover h3,
@@ -250,20 +246,6 @@
   transition: all 0.4s ease;
 }
 
-@media (max-width: 1024px) {
-  .contact .contact-top-row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact .php-email-form button[type=submit] {
-    width: 100%;
-  }
-
-  .contact .info-boxes {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 @keyframes animate-loading {
