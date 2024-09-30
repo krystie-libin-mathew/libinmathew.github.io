@@ -11,17 +11,14 @@
   flex: 1;
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 40px 20px;
+  padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  position: relative;
-  overflow: hidden;
-  max-height: 320px;
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   background: var(--theme-color);
   border-radius: 5px;
   display: flex;
@@ -53,7 +50,7 @@
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--theme-color);
 }
 
@@ -66,7 +63,6 @@
   line-height: 1.5;
   font-size: 14px;
   margin-bottom: 0;
-  color: #444;
 }
 
 .services .icon-box:hover {
@@ -89,10 +85,4 @@
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: white;
-}
-
-@media (max-width: 768px) {
-  .services .icon-box {
-    padding: 30px 15px;
-  }
 }
